@@ -7,11 +7,12 @@
 <!-- SEO META -->
 <meta name="description" content="Ravi Patel is a freelance UX/UI designer with 7+ years of experience crafting intuitive, conversion-driven web and mobile products. Explore selected case studies and design services.">
 <meta name="author" content="Ravi Patel">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="theme-color" content="#000000">
 <link rel="canonical" href="https://ravipatel.design/">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="favicon.svg">
+<link rel="manifest" href="site.webmanifest">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Ravi Patel">
 <meta property="og:title" content="Ravi Patel — UX/UI Designer">
@@ -20,6 +21,8 @@
 <meta property="og:image" content="https://ravipatel.design/assets/img/og-default.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ravi Patel — Senior UI/UX Designer portfolio">
+<meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Ravi Patel — UX/UI Designer">
 <meta name="twitter:description" content="Ravi Patel is a freelance UX/UI designer with 7+ years of experience crafting intuitive, conversion-driven web and mobile products. Explore selected case studies and design services.">
@@ -93,6 +96,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 img{display:block;max-width:100%}
 
 .container{max-width:1440px;margin:0 auto;padding:0 clamp(24px,5vw,72px)}
+@media(max-width:430px){.container{padding-left:18px;padding-right:18px}}
 
 /* ─── GRAIN ─── */
 body::before{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.025;
@@ -100,7 +104,7 @@ background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='htt
 
 /* ─── NAV ─── */
 /* ─── FLOATING GLASS NAV (fluid.glass style) ─── */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:color-mix(in srgb,#000 80%,transparent);backdrop-filter:blur(2rem);-webkit-backdrop-filter:blur(2rem);border:none;border-radius:0;padding:0;width:100%;height:clamp(46px,5vw,56px);overflow:hidden;transition:all .4s cubic-bezier(.645,.045,.355,1)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--bg);backdrop-filter:blur(2rem);-webkit-backdrop-filter:blur(2rem);border:none;border-radius:0;padding:0;width:100%;height:clamp(46px,5vw,56px);overflow:hidden;transition:all .4s cubic-bezier(.645,.045,.355,1)}
 .nav-inner{display:flex;align-items:center;height:100%;width:100%;max-width:1440px;margin:0 auto;padding:0 clamp(24px,5vw,72px)}
 /* Logo — left */
 .nav-logo{height:clamp(36px,2.6rem,42px);display:flex;align-items:center;font-family:var(--serif);font-size:clamp(.7rem,1.1vw,.9rem);font-weight:800;letter-spacing:.06em;transition:all .35s var(--ease);flex-shrink:0;margin-left:2px}
@@ -504,6 +508,7 @@ footer{border-top:1px solid var(--gray6);padding:48px 0}
 @media(max-width:768px){
   nav{padding:6px}
   .nav-logo{font-size:.7rem}
+  .hero{min-height:auto;justify-content:flex-start;padding-top:120px;padding-bottom:clamp(56px,12vh,96px)}
   .hero-metrics{flex-direction:column;gap:24px}
   .services-grid{grid-template-columns:1fr}
   .wcard-thumb{aspect-ratio:3/2}
@@ -514,12 +519,17 @@ footer{border-top:1px solid var(--gray6);padding:48px 0}
   .awards-grid{gap:16px}
   .footer-inner{justify-content:center;text-align:center}
   .section-label{justify-content:center}
+  .work-intro{text-align:left}
+  .work-intro .section-label{justify-content:flex-start}
   .big-cta h2{font-size:clamp(2rem,6vw,3rem)}
-  .wcard-band{grid-template-columns:1fr;justify-items:center;text-align:center;gap:14px;padding:22px}
-  .wcard-tagline{order:2;max-width:none}
-  .wcard-brand{order:1}
-  .wcard-view{order:3;justify-self:center}
-  .wcard-stage{aspect-ratio:4/3}
+  /* mobile work cards — match work page card style */
+  .wcard{background:var(--bg3);border:1px solid var(--gray6);display:flex;flex-direction:column;overflow:hidden}
+  .wcard-overlay{display:none}
+  .wcard-stage{order:1;aspect-ratio:16/11}
+  .wcard-band{order:2;position:static;display:flex;flex-direction:column;align-items:flex-start;gap:10px;background:none;-webkit-backdrop-filter:none;backdrop-filter:none;border-top:none;box-shadow:none;padding:22px;text-align:left}
+  .wcard-brand{color:var(--white);white-space:normal;font-size:1.1rem}
+  .wcard-tagline{color:var(--gray2);text-align:left;max-width:none;margin:0;font-size:.9rem}
+  .wcard-view{display:none}
   .wcard-caption{max-width:80%}
 }
 /* sharp corners on cards & images */
@@ -554,6 +564,31 @@ footer{border-top:1px solid var(--gray6);padding:48px 0}
 }
 </script>
 <!-- /SEO JSONLD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Ravi Patel — UX/UI Design",
+  "image": "https://ravipatel.design/assets/img/og-default.jpg",
+  "url": "https://ravipatel.design/",
+  "description": "Freelance UX/UI design services — web design, mobile app design, dashboards, design systems, and brand experiences.",
+  "areaServed": "Worldwide",
+  "priceRange": "$$",
+  "founder": { "@type": "Person", "name": "Ravi Patel" },
+  "sameAs": [
+    "https://www.linkedin.com/in/raviuiuxdesigner/",
+    "https://dribbble.com/Ravi_UXUI_Design",
+    "https://www.behance.net/ravikumarpatel44"
+  ],
+  "makesOffer": [
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Web Design"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Mobile App Design"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Dashboard & SaaS Design"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Design Systems"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Brand & Logo Design"}}
+  ]
+}
+</script>
 </head>
 <body>
 <div class="cursor" id="cursor"></div><div class="cursor-ring" id="cursorRing"></div><div class="cursor-label" id="cursorLabel"></div>
@@ -662,7 +697,7 @@ footer{border-top:1px solid var(--gray6);padding:48px 0}
       </div>
       <div class="about-right reveal">
         <div class="about-photo">
-          <img src="assets/img/profile.jpg?v=2" alt="Ravi Patel" loading="lazy">
+          <img src="assets/img/profile.webp?v=2" alt="Ravi Patel" loading="lazy">
         </div>
       </div>
     </div>
@@ -687,7 +722,7 @@ footer{border-top:1px solid var(--gray6);padding:48px 0}
           <span class="wcard-view">View Project <svg fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </div>
         <div class="wcard-stage">
-          <img src="assets/img/homexperia-1.png?v=3" alt="Homexperia — AI home discovery platform" class="wcard-img" loading="lazy">
+          <img src="assets/img/homexperia-1.webp?v=3" alt="Homexperia — AI home discovery platform" class="wcard-img" loading="lazy">
           <div class="wcard-overlay"></div>
         </div>
       </a>
@@ -700,7 +735,7 @@ footer{border-top:1px solid var(--gray6);padding:48px 0}
           <span class="wcard-view">View Project <svg fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </div>
         <div class="wcard-stage">
-          <img src="assets/img/tectonagrandis.jpg?v=3" alt="Tectona Grandis — premium handcrafted teak furniture website" class="wcard-img" loading="lazy">
+          <img src="assets/img/tectonagrandis.webp?v=3" alt="Tectona Grandis — premium handcrafted teak furniture website" class="wcard-img" loading="lazy">
           <div class="wcard-overlay"></div>
         </div>
       </a>
@@ -713,7 +748,7 @@ footer{border-top:1px solid var(--gray6);padding:48px 0}
           <span class="wcard-view">View Project <svg fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </div>
         <div class="wcard-stage">
-          <img src="assets/img/axhub.jpg?v=2" alt="AxHub — employee engagement mobile app" class="wcard-img" loading="lazy">
+          <img src="assets/img/axhub.webp?v=2" alt="AxHub — employee engagement mobile app" class="wcard-img" loading="lazy">
           <div class="wcard-overlay"></div>
         </div>
       </a>
@@ -726,7 +761,7 @@ footer{border-top:1px solid var(--gray6);padding:48px 0}
           <span class="wcard-view">View Project <svg fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </div>
         <div class="wcard-stage">
-          <img src="assets/img/indian-railways.jpg?v=2" alt="Indian Railways — real-time fleet tracking dashboard" class="wcard-img" loading="lazy">
+          <img src="assets/img/indian-railways.webp?v=2" alt="Indian Railways — real-time fleet tracking dashboard" class="wcard-img" loading="lazy">
           <div class="wcard-overlay"></div>
         </div>
       </a>

@@ -7,11 +7,12 @@
 <!-- SEO META -->
 <meta name="description" content="Selected UX/UI design work by Ravi Patel — case studies across SaaS dashboards, mobile apps, e-commerce, and brand websites.">
 <meta name="author" content="Ravi Patel">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="theme-color" content="#000000">
 <link rel="canonical" href="https://ravipatel.design/work.html">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="favicon.svg">
+<link rel="manifest" href="site.webmanifest">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Ravi Patel">
 <meta property="og:title" content="Work — Ravi Patel">
@@ -20,6 +21,8 @@
 <meta property="og:image" content="https://ravipatel.design/assets/img/og-default.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ravi Patel — Senior UI/UX Designer portfolio">
+<meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Work — Ravi Patel">
 <meta name="twitter:description" content="Selected UX/UI design work by Ravi Patel — case studies across SaaS dashboards, mobile apps, e-commerce, and brand websites.">
@@ -49,6 +52,7 @@ html::-webkit-scrollbar,body::-webkit-scrollbar{width:0;height:0;display:none}
 a{color:inherit;text-decoration:none}
 button{font-family:inherit;cursor:pointer;border:none;background:none}
 .container{max-width:1440px;margin:0 auto;padding:0 clamp(24px,5vw,72px)}
+@media(max-width:430px){.container{padding-left:18px;padding-right:18px}}
 
 /* Light mode overrides */
 [data-theme="light"] body{color:#111}
@@ -115,7 +119,7 @@ background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='htt
 @keyframes shapeFloat{0%,100%{transform:translateY(0) rotate(0deg)}25%{transform:translateY(-35px) rotate(8deg)}50%{transform:translateY(-18px) rotate(-5deg)}75%{transform:translateY(-45px) rotate(6deg)}}
 
 /* Nav */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:color-mix(in srgb,#000 80%,transparent);backdrop-filter:blur(2rem);-webkit-backdrop-filter:blur(2rem);border:none;border-radius:0;padding:0;width:100%;height:clamp(46px,5vw,56px);overflow:hidden;transition:all .4s cubic-bezier(.645,.045,.355,1)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--bg);backdrop-filter:blur(2rem);-webkit-backdrop-filter:blur(2rem);border:none;border-radius:0;padding:0;width:100%;height:clamp(46px,5vw,56px);overflow:hidden;transition:all .4s cubic-bezier(.645,.045,.355,1)}
 .nav-inner{display:flex;align-items:center;height:100%;width:100%;max-width:1440px;margin:0 auto;padding:0 clamp(24px,5vw,72px)}
 .nav-logo{height:clamp(36px,2.6rem,42px);display:flex;align-items:center;font-family:var(--serif);font-size:clamp(.7rem,1.1vw,.9rem);font-weight:800;letter-spacing:.06em;transition:all .35s var(--ease);flex-shrink:0;margin-left:2px}
 .nav-logo:hover{opacity:.65}
@@ -291,6 +295,7 @@ footer{border-top:1px solid var(--gray6);padding:48px 0}
 @media(max-width:768px){
   nav{padding:6px}
   .nav-logo{font-size:.7rem}
+  .page-header{min-height:auto;justify-content:flex-start;padding-top:120px;padding-bottom:clamp(56px,12vh,96px)}
   .cs-grid{grid-template-columns:1fr}
   .footer-inner{justify-content:center;text-align:center}
 }
@@ -402,7 +407,7 @@ body{animation:pageIn .8s var(--ease) forwards}
         <p class="wcard-tagline">An AI-powered home discovery platform — helping people find and explore properties through a smarter, more personal search</p>
       </div>
       <div class="wcard-stage">
-        <img src="assets/img/homexperia-1.png?v=3" alt="Homexperia — AI home discovery platform" class="wcard-img" loading="lazy">
+        <img src="assets/img/homexperia-1.webp?v=3" alt="Homexperia — AI home discovery platform" class="wcard-img" loading="lazy">
         <div class="wcard-overlay"></div>
       </div>
     </a>
@@ -413,7 +418,7 @@ body{animation:pageIn .8s var(--ease) forwards}
         <p class="wcard-tagline">Redesigning a premium handcrafted teak furniture brand to elevate usability, premium feel, and customer enquiries</p>
       </div>
       <div class="wcard-stage">
-        <img src="assets/img/tectonagrandis.jpg?v=3" alt="Tectona Grandis — premium teak furniture website" class="wcard-img" loading="lazy">
+        <img src="assets/img/tectonagrandis.webp?v=3" alt="Tectona Grandis — premium teak furniture website" class="wcard-img" loading="lazy">
         <div class="wcard-overlay"></div>
       </div>
     </a>
@@ -424,7 +429,7 @@ body{animation:pageIn .8s var(--ease) forwards}
         <p class="wcard-tagline">Redesigned the UHC admin portal to manage appointments and multi-location scheduling for student services — improving efficiency in community support programs and service delivery</p>
       </div>
       <div class="wcard-stage">
-        <img src="assets/img/uhc-dashboard.jpg?v=2" alt="UHC — appointment management admin portal" class="wcard-img" loading="lazy">
+        <img src="assets/img/uhc-dashboard.webp?v=2" alt="UHC — appointment management admin portal" class="wcard-img" loading="lazy">
         <div class="wcard-overlay"></div>
       </div>
     </a>
@@ -435,7 +440,7 @@ body{animation:pageIn .8s var(--ease) forwards}
         <p class="wcard-tagline">An employee engagement platform that streamlines communication, enhances collaboration, and strengthens engagement — improving connectivity and workplace efficiency</p>
       </div>
       <div class="wcard-stage">
-        <img src="assets/img/axhub.jpg?v=2" alt="AxHub — employee engagement mobile app" class="wcard-img" loading="lazy">
+        <img src="assets/img/axhub.webp?v=2" alt="AxHub — employee engagement mobile app" class="wcard-img" loading="lazy">
         <div class="wcard-overlay"></div>
       </div>
     </a>
@@ -446,7 +451,7 @@ body{animation:pageIn .8s var(--ease) forwards}
         <p class="wcard-tagline">An advanced solution for Indian Railways delivering real-time train tracking, live data monitoring, and predictive insights to enhance operational efficiency and support future planning</p>
       </div>
       <div class="wcard-stage">
-        <img src="assets/img/indian-railways.jpg?v=2" alt="Indian Railways — real-time fleet tracking dashboard" class="wcard-img" loading="lazy">
+        <img src="assets/img/indian-railways.webp?v=2" alt="Indian Railways — real-time fleet tracking dashboard" class="wcard-img" loading="lazy">
         <div class="wcard-overlay"></div>
       </div>
     </a>
@@ -457,7 +462,7 @@ body{animation:pageIn .8s var(--ease) forwards}
         <p class="wcard-tagline">A minimal, image-led website for an architecture studio — showcasing the work and driving client enquiries</p>
       </div>
       <div class="wcard-stage">
-        <img src="assets/img/unseen-architects.jpg?v=1" alt="Unseen Architects — studio website" class="wcard-img" loading="lazy">
+        <img src="assets/img/unseen-architects.webp?v=1" alt="Unseen Architects — studio website" class="wcard-img" loading="lazy">
         <div class="wcard-overlay"></div>
       </div>
     </a>
@@ -468,7 +473,7 @@ body{animation:pageIn .8s var(--ease) forwards}
         <p class="wcard-tagline">A real-time admin panel for monitoring battery health and performance across energy storage systems at scale</p>
       </div>
       <div class="wcard-stage">
-        <img src="assets/img/battery-management.jpg?v=1" alt="Battery Management Admin Panel" class="wcard-img" loading="lazy">
+        <img src="assets/img/battery-management.webp?v=1" alt="Battery Management Admin Panel" class="wcard-img" loading="lazy">
         <div class="wcard-overlay"></div>
       </div>
     </a>
@@ -479,7 +484,7 @@ body{animation:pageIn .8s var(--ease) forwards}
         <p class="wcard-tagline">An online grocery &amp; food retail experience — making everyday shopping fast, friendly, and effortless from browse to checkout</p>
       </div>
       <div class="wcard-stage">
-        <img src="assets/img/beyond-food-mart.png?v=1" alt="Beyond Food Mart — grocery experience" class="wcard-img" loading="lazy">
+        <img src="assets/img/beyond-food-mart.webp?v=1" alt="Beyond Food Mart — grocery experience" class="wcard-img" loading="lazy">
         <div class="wcard-overlay"></div>
       </div>
     </a>

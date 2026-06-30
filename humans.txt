@@ -1,0 +1,11 @@
+/* TEAM */
+Designer: Ravi Patel
+Role: Senior UI/UX Designer
+Site: https://ravipatel.design
+LinkedIn: https://www.linkedin.com/in/raviuiuxdesigner/
+Dribbble: https://dribbble.com/Ravi_UXUI_Design
+Behance: https://www.behance.net/ravikumarpatel44
+
+/* SITE */
+Standards: HTML5, CSS3, JavaScript
+Components: Responsive, Dark/Light theme, JSON-LD structured data

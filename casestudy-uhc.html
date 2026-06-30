@@ -7,11 +7,12 @@
 <!-- SEO META -->
 <meta name="description" content="UHC case study — redesigning a multi-location appointment management web portal for student health and support services.">
 <meta name="author" content="Ravi Patel">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="theme-color" content="#000000">
 <link rel="canonical" href="https://ravipatel.design/casestudy-uhc.html">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="favicon.svg">
+<link rel="manifest" href="site.webmanifest">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Ravi Patel">
 <meta property="og:title" content="UHC — Case Study · Ravi Patel">
@@ -20,6 +21,8 @@
 <meta property="og:image" content="https://ravipatel.design/assets/img/uhc-dashboard.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ravi Patel — Senior UI/UX Designer portfolio">
+<meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="UHC — Case Study · Ravi Patel">
 <meta name="twitter:description" content="UHC case study — redesigning a multi-location appointment management web portal for student health and support services.">
@@ -55,6 +58,7 @@ a{color:inherit;text-decoration:none}
 button{font-family:inherit;cursor:pointer;border:none;background:none}
 img{display:block;max-width:100%}
 .container{max-width:1440px;margin:0 auto;padding:0 clamp(24px,5vw,72px)}
+@media(max-width:430px){.container{padding-left:18px;padding-right:18px}}
 
 body::before{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 
@@ -101,7 +105,7 @@ body::before{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;
 [data-theme="light"] .cursor-ring.hover,[data-theme="light"] .cursor-ring.hover-link{border-color:rgba(0,0,0,.85);background:rgba(0,0,0,.06)}
 [data-theme="light"] .cursor-label{color:#111;text-shadow:0 1px 4px rgba(255,255,255,.65)}
 
-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:color-mix(in srgb,#000 80%,transparent);backdrop-filter:blur(2rem);-webkit-backdrop-filter:blur(2rem);border:none;border-radius:0;padding:0;width:100%;height:clamp(46px,5vw,56px);overflow:hidden;transition:all .4s cubic-bezier(.645,.045,.355,1)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--bg);backdrop-filter:blur(2rem);-webkit-backdrop-filter:blur(2rem);border:none;border-radius:0;padding:0;width:100%;height:clamp(46px,5vw,56px);overflow:hidden;transition:all .4s cubic-bezier(.645,.045,.355,1)}
 .nav-inner{display:flex;align-items:center;height:100%;width:100%;max-width:1440px;margin:0 auto;padding:0 clamp(24px,5vw,72px)}
 .nav-logo{height:clamp(36px,2.6rem,42px);display:flex;align-items:center;font-family:var(--serif);font-size:clamp(.7rem,1.1vw,.9rem);font-weight:800;letter-spacing:.06em;transition:all .35s var(--ease);flex-shrink:0;margin-left:2px}
 .nav-logo:hover{opacity:.65}
@@ -273,6 +277,7 @@ footer{border-top:1px solid var(--gray6);padding:48px 0}
 @media(max-width:768px){
   nav{padding:6px}
   .nav-logo{font-size:.7rem}
+  .csd-hero-wrap{padding-top:120px}
   .about-grid{grid-template-columns:1fr}
   .about-photo{aspect-ratio:1/1}
   .about-stats{flex-wrap:wrap}
@@ -479,7 +484,7 @@ footer{border-top:1px solid var(--gray6);padding:48px 0}
 
 <div class="container">
   <div class="csd-cover reveal">
-    <img src="assets/img/uhc-dashboard.jpg?v=2" alt="UHC appointment management portal — dashboard">
+    <img src="assets/img/uhc-dashboard.webp?v=2" alt="UHC appointment management portal — dashboard">
   </div>
 </div>
 
@@ -541,8 +546,8 @@ footer{border-top:1px solid var(--gray6);padding:48px 0}
       <h2 class="section-title">Old Web Portal <em>Snapshot</em></h2>
     </div>
     <div class="csd-stack reveal">
-      <img src="assets/img/uhc-old-portal-1.png?v=1" alt="UHC old portal — counsellor availability grid" loading="lazy">
-      <img src="assets/img/uhc-old-portal-2.png?v=1" alt="UHC old portal — schedule appointment modal" loading="lazy">
+      <img src="assets/img/uhc-old-portal-1.webp?v=1" alt="UHC old portal — counsellor availability grid" loading="lazy">
+      <img src="assets/img/uhc-old-portal-2.webp?v=1" alt="UHC old portal — schedule appointment modal" loading="lazy">
     </div>
   </div>
 </section>
@@ -627,7 +632,7 @@ footer{border-top:1px solid var(--gray6);padding:48px 0}
       <p style="margin-top:18px;max-width:820px;font-size:1.02rem;color:var(--gray2);line-height:1.8;font-weight:300">We designed role-based user flows to simplify the UHC portal experience. Admins manage key operations like users, slots, and notifications. Front Desk staff handle appointments, while Case Workers track their schedules and availability. This focused approach ensures clarity, ease of use, and efficiency for every user.</p>
     </div>
     <div class="csd-stack reveal">
-      <img src="assets/img/uhc-user-flow.png?v=2" alt="UHC portal — role-based user flowchart" loading="lazy">
+      <img src="assets/img/uhc-user-flow.webp?v=2" alt="UHC portal — role-based user flowchart" loading="lazy">
     </div>
   </div>
 </section>
@@ -643,22 +648,22 @@ footer{border-top:1px solid var(--gray6);padding:48px 0}
   </div>
   <div class="wire-marquee reveal">
     <div class="wire-track">
-      <img src="assets/img/uhc-wire-1.png?v=1" alt="UHC wireframe" loading="lazy">
-      <img src="assets/img/uhc-wire-2.png?v=1" alt="UHC wireframe" loading="lazy">
-      <img src="assets/img/uhc-wire-3.png?v=1" alt="UHC wireframe" loading="lazy">
-      <img src="assets/img/uhc-wire-4.png?v=1" alt="UHC wireframe" loading="lazy">
-      <img src="assets/img/uhc-wire-5.png?v=1" alt="UHC wireframe" loading="lazy">
-      <img src="assets/img/uhc-wire-6.png?v=1" alt="UHC wireframe" loading="lazy">
-      <img src="assets/img/uhc-wire-7.png?v=1" alt="UHC wireframe" loading="lazy">
-      <img src="assets/img/uhc-wire-8.png?v=1" alt="UHC wireframe" loading="lazy">
-      <img src="assets/img/uhc-wire-1.png?v=1" alt="" aria-hidden="true" loading="lazy">
-      <img src="assets/img/uhc-wire-2.png?v=1" alt="" aria-hidden="true" loading="lazy">
-      <img src="assets/img/uhc-wire-3.png?v=1" alt="" aria-hidden="true" loading="lazy">
-      <img src="assets/img/uhc-wire-4.png?v=1" alt="" aria-hidden="true" loading="lazy">
-      <img src="assets/img/uhc-wire-5.png?v=1" alt="" aria-hidden="true" loading="lazy">
-      <img src="assets/img/uhc-wire-6.png?v=1" alt="" aria-hidden="true" loading="lazy">
-      <img src="assets/img/uhc-wire-7.png?v=1" alt="" aria-hidden="true" loading="lazy">
-      <img src="assets/img/uhc-wire-8.png?v=1" alt="" aria-hidden="true" loading="lazy">
+      <img src="assets/img/uhc-wire-1.webp?v=1" alt="UHC wireframe" loading="lazy">
+      <img src="assets/img/uhc-wire-2.webp?v=1" alt="UHC wireframe" loading="lazy">
+      <img src="assets/img/uhc-wire-3.webp?v=1" alt="UHC wireframe" loading="lazy">
+      <img src="assets/img/uhc-wire-4.webp?v=1" alt="UHC wireframe" loading="lazy">
+      <img src="assets/img/uhc-wire-5.webp?v=1" alt="UHC wireframe" loading="lazy">
+      <img src="assets/img/uhc-wire-6.webp?v=1" alt="UHC wireframe" loading="lazy">
+      <img src="assets/img/uhc-wire-7.webp?v=1" alt="UHC wireframe" loading="lazy">
+      <img src="assets/img/uhc-wire-8.webp?v=1" alt="UHC wireframe" loading="lazy">
+      <img src="assets/img/uhc-wire-1.webp?v=1" alt="" aria-hidden="true" loading="lazy">
+      <img src="assets/img/uhc-wire-2.webp?v=1" alt="" aria-hidden="true" loading="lazy">
+      <img src="assets/img/uhc-wire-3.webp?v=1" alt="" aria-hidden="true" loading="lazy">
+      <img src="assets/img/uhc-wire-4.webp?v=1" alt="" aria-hidden="true" loading="lazy">
+      <img src="assets/img/uhc-wire-5.webp?v=1" alt="" aria-hidden="true" loading="lazy">
+      <img src="assets/img/uhc-wire-6.webp?v=1" alt="" aria-hidden="true" loading="lazy">
+      <img src="assets/img/uhc-wire-7.webp?v=1" alt="" aria-hidden="true" loading="lazy">
+      <img src="assets/img/uhc-wire-8.webp?v=1" alt="" aria-hidden="true" loading="lazy">
     </div>
   </div>
 </section>
@@ -672,7 +677,7 @@ footer{border-top:1px solid var(--gray6);padding:48px 0}
       <p style="margin-top:18px;max-width:820px;font-size:1.02rem;color:var(--gray2);line-height:1.8;font-weight:300">We crafted a balanced color palette and typography system to enhance visual clarity and usability. The colors support accessibility and hierarchy, while the typefaces ensure readability across all screen sizes—delivering a clean, modern, and cohesive UI experience.</p>
     </div>
     <div class="csd-stack reveal">
-      <img src="assets/img/uhc-style-system.png?v=1" alt="UHC — colour palette and typography system" loading="lazy">
+      <img src="assets/img/uhc-style-system.webp?v=1" alt="UHC — colour palette and typography system" loading="lazy">
     </div>
   </div>
 </section>
@@ -685,13 +690,13 @@ footer{border-top:1px solid var(--gray6);padding:48px 0}
       <h2 class="section-title">The Experience <em>We Crafted</em></h2>
     </div>
     <div class="csd-grid2 reveal">
-      <img src="assets/img/uhc-showcase-2.png?v=1" alt="UHC portal — login screen" loading="lazy">
-      <img src="assets/img/uhc-showcase-1.png?v=1" alt="UHC portal — users management" loading="lazy">
-      <img src="assets/img/uhc-showcase-3.png?v=1" alt="UHC portal — schedule setup" loading="lazy">
-      <img src="assets/img/uhc-showcase-4.png?v=1" alt="UHC portal — appointment slots" loading="lazy">
+      <img src="assets/img/uhc-showcase-2.webp?v=1" alt="UHC portal — login screen" loading="lazy">
+      <img src="assets/img/uhc-showcase-1.webp?v=1" alt="UHC portal — users management" loading="lazy">
+      <img src="assets/img/uhc-showcase-3.webp?v=1" alt="UHC portal — schedule setup" loading="lazy">
+      <img src="assets/img/uhc-showcase-4.webp?v=1" alt="UHC portal — appointment slots" loading="lazy">
     </div>
     <div class="csd-stack reveal">
-      <img src="assets/img/uhc-showcase-end.png?v=2" alt="UHC portal — dark mode dashboard" loading="lazy">
+      <img src="assets/img/uhc-showcase-end.webp?v=2" alt="UHC portal — dark mode dashboard" loading="lazy">
     </div>
   </div>
 </section>
@@ -746,20 +751,20 @@ footer{border-top:1px solid var(--gray6);padding:48px 0}
   </div>
   <div class="csd-marquee">
     <div class="csd-marquee-track">
-      <a href="casestudy-homexperia.html" class="csd-proj"><div class="csd-proj-thumb"><img src="assets/img/homexperia-1.png?v=3" alt="Homexperia" loading="lazy"></div><div class="csd-proj-name">Homexperia</div><div class="csd-proj-cat">An AI-powered home discovery platform — helping people find and explore properties through a smarter, more personal search</div></a>
-      <a href="casestudy-tectonagrandis.html" class="csd-proj"><div class="csd-proj-thumb"><img src="assets/img/tectonagrandis.jpg?v=3" alt="Tectona Grandis" loading="lazy"></div><div class="csd-proj-name">Tectona Grandis</div><div class="csd-proj-cat">Redesigning a premium handcrafted teak furniture brand to elevate usability, premium feel, and customer enquiries</div></a>
-      <a href="casestudy-axhub.html" class="csd-proj"><div class="csd-proj-thumb"><img src="assets/img/axhub.jpg?v=2" alt="AxHub" loading="lazy"></div><div class="csd-proj-name">AxHub</div><div class="csd-proj-cat">An employee engagement platform that streamlines communication, enhances collaboration, and strengthens engagement</div></a>
-      <a href="casestudy-indian-railways.html" class="csd-proj"><div class="csd-proj-thumb"><img src="assets/img/indian-railways.jpg?v=2" alt="Indian Railways" loading="lazy"></div><div class="csd-proj-name">Indian Railways</div><div class="csd-proj-cat">Real-time train tracking, live data monitoring, and predictive insights to enhance operational efficiency</div></a>
-      <a href="casestudy-unseenarchitects.html" class="csd-proj"><div class="csd-proj-thumb"><img src="assets/img/unseen-architects.jpg?v=1" alt="Unseen Architects" loading="lazy"></div><div class="csd-proj-name">Unseen Architects</div><div class="csd-proj-cat">A minimal, image-led website for an architecture studio — showcasing the work and driving client enquiries</div></a>
-      <a href="casestudy-battery-management.html" class="csd-proj"><div class="csd-proj-thumb"><img src="assets/img/battery-management.jpg?v=1" alt="Battery Management" loading="lazy"></div><div class="csd-proj-name">Battery Management</div><div class="csd-proj-cat">A real-time admin panel for monitoring battery health and performance across energy storage systems at scale</div></a>
-      <a href="casestudy-beyond-food-mart.html" class="csd-proj"><div class="csd-proj-thumb"><img src="assets/img/beyond-food-mart.png?v=1" alt="Beyond Food Mart" loading="lazy"></div><div class="csd-proj-name">Beyond Food Mart</div><div class="csd-proj-cat">An online grocery &amp; food retail experience — making everyday shopping fast, friendly, and effortless</div></a>
-      <a href="casestudy-homexperia.html" class="csd-proj" aria-hidden="true" tabindex="-1"><div class="csd-proj-thumb"><img src="assets/img/homexperia-1.png?v=3" alt="" loading="lazy"></div><div class="csd-proj-name">Homexperia</div><div class="csd-proj-cat">An AI-powered home discovery platform — helping people find and explore properties through a smarter, more personal search</div></a>
-      <a href="casestudy-tectonagrandis.html" class="csd-proj" aria-hidden="true" tabindex="-1"><div class="csd-proj-thumb"><img src="assets/img/tectonagrandis.jpg?v=3" alt="" loading="lazy"></div><div class="csd-proj-name">Tectona Grandis</div><div class="csd-proj-cat">Redesigning a premium handcrafted teak furniture brand to elevate usability, premium feel, and customer enquiries</div></a>
-      <a href="casestudy-axhub.html" class="csd-proj" aria-hidden="true" tabindex="-1"><div class="csd-proj-thumb"><img src="assets/img/axhub.jpg?v=2" alt="" loading="lazy"></div><div class="csd-proj-name">AxHub</div><div class="csd-proj-cat">An employee engagement platform that streamlines communication, enhances collaboration, and strengthens engagement</div></a>
-      <a href="casestudy-indian-railways.html" class="csd-proj" aria-hidden="true" tabindex="-1"><div class="csd-proj-thumb"><img src="assets/img/indian-railways.jpg?v=2" alt="" loading="lazy"></div><div class="csd-proj-name">Indian Railways</div><div class="csd-proj-cat">Real-time train tracking, live data monitoring, and predictive insights to enhance operational efficiency</div></a>
-      <a href="casestudy-unseenarchitects.html" class="csd-proj" aria-hidden="true" tabindex="-1"><div class="csd-proj-thumb"><img src="assets/img/unseen-architects.jpg?v=1" alt="" loading="lazy"></div><div class="csd-proj-name">Unseen Architects</div><div class="csd-proj-cat">A minimal, image-led website for an architecture studio — showcasing the work and driving client enquiries</div></a>
-      <a href="casestudy-battery-management.html" class="csd-proj" aria-hidden="true" tabindex="-1"><div class="csd-proj-thumb"><img src="assets/img/battery-management.jpg?v=1" alt="" loading="lazy"></div><div class="csd-proj-name">Battery Management</div><div class="csd-proj-cat">A real-time admin panel for monitoring battery health and performance across energy storage systems at scale</div></a>
-      <a href="casestudy-beyond-food-mart.html" class="csd-proj" aria-hidden="true" tabindex="-1"><div class="csd-proj-thumb"><img src="assets/img/beyond-food-mart.png?v=1" alt="" loading="lazy"></div><div class="csd-proj-name">Beyond Food Mart</div><div class="csd-proj-cat">An online grocery &amp; food retail experience — making everyday shopping fast, friendly, and effortless</div></a>
+      <a href="casestudy-homexperia.html" class="csd-proj"><div class="csd-proj-thumb"><img src="assets/img/homexperia-1.webp?v=3" alt="Homexperia" loading="lazy"></div><div class="csd-proj-name">Homexperia</div><div class="csd-proj-cat">An AI-powered home discovery platform — helping people find and explore properties through a smarter, more personal search</div></a>
+      <a href="casestudy-tectonagrandis.html" class="csd-proj"><div class="csd-proj-thumb"><img src="assets/img/tectonagrandis.webp?v=3" alt="Tectona Grandis" loading="lazy"></div><div class="csd-proj-name">Tectona Grandis</div><div class="csd-proj-cat">Redesigning a premium handcrafted teak furniture brand to elevate usability, premium feel, and customer enquiries</div></a>
+      <a href="casestudy-axhub.html" class="csd-proj"><div class="csd-proj-thumb"><img src="assets/img/axhub.webp?v=2" alt="AxHub" loading="lazy"></div><div class="csd-proj-name">AxHub</div><div class="csd-proj-cat">An employee engagement platform that streamlines communication, enhances collaboration, and strengthens engagement</div></a>
+      <a href="casestudy-indian-railways.html" class="csd-proj"><div class="csd-proj-thumb"><img src="assets/img/indian-railways.webp?v=2" alt="Indian Railways" loading="lazy"></div><div class="csd-proj-name">Indian Railways</div><div class="csd-proj-cat">Real-time train tracking, live data monitoring, and predictive insights to enhance operational efficiency</div></a>
+      <a href="casestudy-unseenarchitects.html" class="csd-proj"><div class="csd-proj-thumb"><img src="assets/img/unseen-architects.webp?v=1" alt="Unseen Architects" loading="lazy"></div><div class="csd-proj-name">Unseen Architects</div><div class="csd-proj-cat">A minimal, image-led website for an architecture studio — showcasing the work and driving client enquiries</div></a>
+      <a href="casestudy-battery-management.html" class="csd-proj"><div class="csd-proj-thumb"><img src="assets/img/battery-management.webp?v=1" alt="Battery Management" loading="lazy"></div><div class="csd-proj-name">Battery Management</div><div class="csd-proj-cat">A real-time admin panel for monitoring battery health and performance across energy storage systems at scale</div></a>
+      <a href="casestudy-beyond-food-mart.html" class="csd-proj"><div class="csd-proj-thumb"><img src="assets/img/beyond-food-mart.webp?v=1" alt="Beyond Food Mart" loading="lazy"></div><div class="csd-proj-name">Beyond Food Mart</div><div class="csd-proj-cat">An online grocery &amp; food retail experience — making everyday shopping fast, friendly, and effortless</div></a>
+      <a href="casestudy-homexperia.html" class="csd-proj" aria-hidden="true" tabindex="-1"><div class="csd-proj-thumb"><img src="assets/img/homexperia-1.webp?v=3" alt="" loading="lazy"></div><div class="csd-proj-name">Homexperia</div><div class="csd-proj-cat">An AI-powered home discovery platform — helping people find and explore properties through a smarter, more personal search</div></a>
+      <a href="casestudy-tectonagrandis.html" class="csd-proj" aria-hidden="true" tabindex="-1"><div class="csd-proj-thumb"><img src="assets/img/tectonagrandis.webp?v=3" alt="" loading="lazy"></div><div class="csd-proj-name">Tectona Grandis</div><div class="csd-proj-cat">Redesigning a premium handcrafted teak furniture brand to elevate usability, premium feel, and customer enquiries</div></a>
+      <a href="casestudy-axhub.html" class="csd-proj" aria-hidden="true" tabindex="-1"><div class="csd-proj-thumb"><img src="assets/img/axhub.webp?v=2" alt="" loading="lazy"></div><div class="csd-proj-name">AxHub</div><div class="csd-proj-cat">An employee engagement platform that streamlines communication, enhances collaboration, and strengthens engagement</div></a>
+      <a href="casestudy-indian-railways.html" class="csd-proj" aria-hidden="true" tabindex="-1"><div class="csd-proj-thumb"><img src="assets/img/indian-railways.webp?v=2" alt="" loading="lazy"></div><div class="csd-proj-name">Indian Railways</div><div class="csd-proj-cat">Real-time train tracking, live data monitoring, and predictive insights to enhance operational efficiency</div></a>
+      <a href="casestudy-unseenarchitects.html" class="csd-proj" aria-hidden="true" tabindex="-1"><div class="csd-proj-thumb"><img src="assets/img/unseen-architects.webp?v=1" alt="" loading="lazy"></div><div class="csd-proj-name">Unseen Architects</div><div class="csd-proj-cat">A minimal, image-led website for an architecture studio — showcasing the work and driving client enquiries</div></a>
+      <a href="casestudy-battery-management.html" class="csd-proj" aria-hidden="true" tabindex="-1"><div class="csd-proj-thumb"><img src="assets/img/battery-management.webp?v=1" alt="" loading="lazy"></div><div class="csd-proj-name">Battery Management</div><div class="csd-proj-cat">A real-time admin panel for monitoring battery health and performance across energy storage systems at scale</div></a>
+      <a href="casestudy-beyond-food-mart.html" class="csd-proj" aria-hidden="true" tabindex="-1"><div class="csd-proj-thumb"><img src="assets/img/beyond-food-mart.webp?v=1" alt="" loading="lazy"></div><div class="csd-proj-name">Beyond Food Mart</div><div class="csd-proj-cat">An online grocery &amp; food retail experience — making everyday shopping fast, friendly, and effortless</div></a>
     </div>
   </div>
 </section>
