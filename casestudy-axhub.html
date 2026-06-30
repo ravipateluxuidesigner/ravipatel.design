@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AxHub — Case Study · Ravi Patel</title>
+<!-- SEO META -->
+<meta name="description" content="AxHub case study — an employee engagement &amp; networking mobile app for Axis that streamlines communication, collaboration, and engagement across the organization.">
+<meta name="author" content="Ravi Patel">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://ravipatel.design/casestudy-axhub.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="favicon.svg">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ravi Patel">
+<meta property="og:title" content="AxHub — Case Study · Ravi Patel">
+<meta property="og:description" content="AxHub case study — an employee engagement &amp; networking mobile app for Axis that streamlines communication, collaboration, and engagement across the organization.">
+<meta property="og:url" content="https://ravipatel.design/casestudy-axhub.html">
+<meta property="og:image" content="https://ravipatel.design/assets/img/axhub.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AxHub — Case Study · Ravi Patel">
+<meta name="twitter:description" content="AxHub case study — an employee engagement &amp; networking mobile app for Axis that streamlines communication, collaboration, and engagement across the organization.">
+<meta name="twitter:image" content="https://ravipatel.design/assets/img/axhub.jpg">
+<!-- /SEO META -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#000;--bg2:#0A0A0A;--bg3:#111;--bg4:#181818;--white:#fff;--gray1:#E0E0E0;--gray2:#999;--gray3:#666;--gray4:#444;--gray5:#2A2A2A;--gray6:#1A1A1A;--serif:'Plus Jakarta Sans',sans-serif;--sans:'Plus Jakarta Sans',-apple-system,sans-serif;--ease:cubic-bezier(.25,.46,.45,.94)}
+[data-theme="light"]{--bg:#FFFFFF;--bg2:#F8F8F8;--bg3:#F0F0F0;--bg4:#E8E8E8;--white:#111111;--gray1:#222222;--gray2:#555555;--gray3:#777777;--gray4:#AAAAAA;--gray5:#D5D5D5;--gray6:#E5E5E5}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{font-family:var(--sans);background:var(--bg);color:var(--white);line-height:1.7;font-weight:400;overflow-x:clip}
+html,body{scrollbar-width:none;-ms-overflow-style:none}
+html::-webkit-scrollbar,body::-webkit-scrollbar{width:0;height:0;display:none}
+.scroll-progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--white);z-index:10001;transition:width .08s linear;pointer-events:none}
+::selection{background:var(--white);color:var(--bg)}
+[data-theme="light"] body{color:#111}
+[data-theme="light"] ::selection{background:#111;color:#fff}
+[data-theme="light"] body::before{opacity:.015}
+[data-theme="light"] .about-card h4{color:#111}
+[data-theme="light"] .step-content h4{color:#111}
+[data-theme="light"] .about-stat-val{color:#111}
+[data-theme="light"] .skill-name{color:#111}
+[data-theme="light"] .big-cta h2{color:#111}
+[data-theme="light"] .btn-fill{background:#111;color:#fff}
+[data-theme="light"] .btn-fill:hover{background:#333;box-shadow:0 12px 40px rgba(0,0,0,.1)}
+[data-theme="light"] .social-link:hover{background:#111;border-color:#111}
+[data-theme="light"] .social-link:hover svg{color:#fff}
+[data-theme="light"] .back-to-top{background:#111;color:#fff}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+img{display:block;max-width:100%}
+.container{max-width:1440px;margin:0 auto;padding:0 clamp(24px,5vw,72px)}
+
+body::before{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* ─── END MENU SECTION (fluid.glass style) ─── */
+.end-menu{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;background:var(--bg3)}
+.end-menu-card{background:rgba(20,20,20,.95);border:1px solid rgba(255,255,255,.06);border-radius:28px;padding:clamp(40px,6vw,72px);width:min(500px,90vw);position:relative;z-index:1}
+.end-menu-label{font-size:.65rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:28px}
+.end-menu-links{display:flex;flex-direction:column;gap:0;margin-bottom:32px}
+.end-menu-link{font-family:var(--serif);font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:700;color:rgba(255,255,255,.75);padding:14px 0;transition:all .35s var(--ease);display:block}
+.end-menu-link:hover{color:#fff;padding-left:16px}
+.end-menu-bottom{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding-top:24px;border-top:1px solid rgba(255,255,255,.06);margin-bottom:28px}
+.end-menu-col-label{font-size:.6rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.25);margin-bottom:8px}
+.end-menu-detail{display:block;font-size:.85rem;color:rgba(255,255,255,.45);transition:color .3s;line-height:1.7}
+.end-menu-detail:hover{color:#fff}
+.end-menu-cta{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;padding:18px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.7);transition:all .35s var(--ease)}
+.end-menu-cta:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.15);color:#fff}
+.end-menu-cta svg{transition:transform .3s}
+.end-menu-cta:hover svg{transform:translateX(4px)}
+[data-theme="light"] .end-menu{background:var(--bg3)}
+[data-theme="light"] .end-menu-card{background:rgba(240,240,240,.98);border-color:rgba(0,0,0,.06)}
+[data-theme="light"] .end-menu-label{color:rgba(0,0,0,.25)}
+[data-theme="light"] .end-menu-link{color:rgba(0,0,0,.65)}
+[data-theme="light"] .end-menu-link:hover{color:#000}
+[data-theme="light"] .end-menu-bottom{border-top-color:rgba(0,0,0,.06)}
+[data-theme="light"] .end-menu-col-label{color:rgba(0,0,0,.2)}
+[data-theme="light"] .end-menu-detail{color:rgba(0,0,0,.4)}
+[data-theme="light"] .end-menu-detail:hover{color:#000}
+[data-theme="light"] .end-menu-cta{background:rgba(0,0,0,.04);border-color:rgba(0,0,0,.08);color:rgba(0,0,0,.6)}
+[data-theme="light"] .end-menu-cta:hover{background:rgba(0,0,0,.08);color:#000}
+
+*{cursor:none!important}
+.cursor{position:fixed;top:0;left:0;width:8px;height:8px;background:#fff;border-radius:50%;pointer-events:none;z-index:99999;box-shadow:0 0 0 1.5px rgba(0,0,0,.35);transition:width .4s cubic-bezier(.18,.89,.32,1.28),height .4s cubic-bezier(.18,.89,.32,1.28),opacity .3s}
+.cursor-ring{position:fixed;top:0;left:0;width:36px;height:36px;border:1.5px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.25);border-radius:50%;pointer-events:none;z-index:99998;transition:width .5s cubic-bezier(.18,.89,.32,1.28),height .5s cubic-bezier(.18,.89,.32,1.28),border-color .4s,background .4s,opacity .4s}
+.cursor.hover{width:0;height:0;opacity:0}
+.cursor-ring.hover{width:80px;height:80px;background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.9)}
+.cursor-ring.hover-link{width:90px;height:90px;background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.9)}
+.cursor.click{width:4px;height:4px}
+.cursor-ring.click{width:28px;height:28px;border-color:rgba(255,255,255,.7)}
+.cursor-label{position:fixed;pointer-events:none;z-index:99999;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.55);opacity:0;transition:opacity .3s;white-space:nowrap}
+.cursor-label.visible{opacity:1}
+@media(max-width:768px){.cursor,.cursor-ring,.cursor-label{display:none}*{cursor:auto!important}}
+[data-theme="light"] .cursor{background:#111;box-shadow:0 0 0 1.5px rgba(255,255,255,.65)}
+[data-theme="light"] .cursor-ring{border-color:#111;box-shadow:0 0 0 1px rgba(255,255,255,.55)}
+[data-theme="light"] .cursor-ring.hover,[data-theme="light"] .cursor-ring.hover-link{border-color:rgba(0,0,0,.85);background:rgba(0,0,0,.06)}
+[data-theme="light"] .cursor-label{color:#111;text-shadow:0 1px 4px rgba(255,255,255,.65)}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:color-mix(in srgb,#000 80%,transparent);backdrop-filter:blur(2rem);-webkit-backdrop-filter:blur(2rem);border:none;border-radius:0;padding:0;width:100%;height:clamp(46px,5vw,56px);overflow:hidden;transition:all .4s cubic-bezier(.645,.045,.355,1)}
+.nav-inner{display:flex;align-items:center;height:100%;width:100%;max-width:1440px;margin:0 auto;padding:0 clamp(24px,5vw,72px)}
+.nav-logo{height:clamp(36px,2.6rem,42px);display:flex;align-items:center;font-family:var(--serif);font-size:clamp(.7rem,1.1vw,.9rem);font-weight:800;letter-spacing:.06em;transition:all .35s var(--ease);flex-shrink:0;margin-left:2px}
+.nav-logo:hover{opacity:.65}
+.nav-page{flex:1;text-align:center;font-size:.72rem;font-weight:600;color:rgba(255,255,255,.8);letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;transition:all .3s var(--ease)}
+@media(max-width:768px){.nav-page{display:none}}
+nav.is-menu .nav-logo{opacity:.5;filter:blur(3px)}
+nav.is-menu .nav-page{opacity:.5;filter:blur(3px)}
+[data-theme="light"] nav{background:#fff;border-color:rgba(0,0,0,.06)}
+[data-theme="light"] nav.is-menu{background:transparent;border-color:transparent;box-shadow:none}
+[data-theme="light"] .nav-logo{color:#111}
+[data-theme="light"] .nav-logo:hover{opacity:.65}
+[data-theme="light"] .nav-page{color:rgba(0,0,0,.65)}
+.menu-overlay{position:fixed;inset:0;z-index:99;background:rgba(0,0,0,.8);backdrop-filter:blur(10px) saturate(.6);-webkit-backdrop-filter:blur(10px) saturate(.6);opacity:0;pointer-events:none;transition:opacity .5s cubic-bezier(.645,.045,.355,1)}
+.menu-overlay.open{opacity:1;pointer-events:auto}
+.menu-panel{position:fixed;top:0;right:0;height:100vh;width:min(440px,90vw);z-index:101;overflow-y:auto;visibility:hidden;transform:translateX(100%);background:color-mix(in srgb,#000 92%,transparent);border-left:1px solid rgba(255,255,255,.06);border-radius:0;padding:clamp(84px,11vh,110px) clamp(34px,4.5vw,52px) clamp(40px,6vw,56px);transition:transform .55s cubic-bezier(.645,.045,.355,1),visibility .55s;box-shadow:-20px 0 60px rgba(0,0,0,.45)}
+.menu-panel.open{visibility:visible;transform:translateX(0);-webkit-backdrop-filter:blur(2rem);backdrop-filter:blur(2rem)}
+.menu-panel-close{position:absolute;top:clamp(18px,2.6vh,28px);right:clamp(20px,2.4vw,32px);width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.04);color:#fff;display:flex;align-items:center;justify-content:center;transition:all .35s var(--ease);z-index:2}
+.menu-panel-close:hover{background:rgba(255,255,255,.12);transform:rotate(90deg)}
+[data-theme="light"] .menu-panel-close{border-color:rgba(0,0,0,.18);background:rgba(0,0,0,.03);color:#111}
+[data-theme="light"] .menu-panel-close:hover{background:rgba(0,0,0,.08)}
+.menu-panel-label{font-size:.6rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:rgba(255,255,255,.25);margin-bottom:24px}
+.menu-panel-links{display:flex;flex-direction:column;margin-bottom:32px}
+.menu-panel-link{font-family:var(--serif);font-size:clamp(1.5rem,2.8vw,2rem);font-weight:700;color:rgba(255,255,255,.7);padding:12px 0;display:block;transition:all .3s var(--ease);opacity:0;transform:translateY(20px)}
+.menu-panel.open .menu-panel-link{opacity:1;transform:translateY(0)}
+.menu-panel.open .menu-panel-link:nth-child(1){transition-delay:.08s}
+.menu-panel.open .menu-panel-link:nth-child(2){transition-delay:.12s}
+.menu-panel.open .menu-panel-link:nth-child(3){transition-delay:.16s}
+.menu-panel.open .menu-panel-link:nth-child(4){transition-delay:.2s}
+.menu-panel.open .menu-panel-link:nth-child(5){transition-delay:.24s}
+.menu-panel.open .menu-panel-link:nth-child(6){transition-delay:.28s}
+.menu-panel-link:hover{color:#fff;padding-left:14px}
+.menu-panel-bottom{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding-top:24px;border-top:1px solid rgba(255,255,255,.06);margin-bottom:24px;opacity:0;transform:translateY(16px);transition:all .4s var(--ease) .3s}
+.menu-panel.open .menu-panel-bottom{opacity:1;transform:translateY(0)}
+.menu-panel-col-label{font-size:.58rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.2);margin-bottom:8px}
+.menu-panel-detail{display:block;font-size:.82rem;color:rgba(255,255,255,.4);transition:color .3s;line-height:1.7}
+.menu-panel-detail:hover{color:#fff}
+.menu-panel-cta{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;padding:16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.6);transition:all .35s var(--ease);opacity:0;transform:translateY(16px)}
+.menu-panel.open .menu-panel-cta{opacity:1;transform:translateY(0);transition-delay:.35s}
+.menu-panel-cta:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.15);color:#fff}
+.menu-panel-cta svg{transition:transform .3s}
+.menu-panel-cta:hover svg{transform:translateX(4px)}
+[data-theme="light"] .menu-overlay{background:rgba(18,18,22,.5);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+[data-theme="light"] .menu-panel{background:color-mix(in srgb,#fff 95%,transparent);border-color:rgba(0,0,0,.06);box-shadow:0 -20px 60px rgba(0,0,0,.1)}
+[data-theme="light"] .menu-panel-label{color:rgba(0,0,0,.5)}
+[data-theme="light"] .menu-panel-link{color:rgba(0,0,0,.82)}
+[data-theme="light"] .menu-panel-link:hover{color:#000}
+[data-theme="light"] .menu-panel-bottom{border-top-color:rgba(0,0,0,.06)}
+[data-theme="light"] .menu-panel-col-label{color:rgba(0,0,0,.45)}
+[data-theme="light"] .menu-panel-detail{color:rgba(0,0,0,.62)}
+[data-theme="light"] .menu-panel-detail:hover{color:#000}
+[data-theme="light"] .menu-panel-cta{background:rgba(0,0,0,.04);border-color:rgba(0,0,0,.12);color:rgba(0,0,0,.78)}
+[data-theme="light"] .menu-panel-cta:hover{background:rgba(0,0,0,.08);color:#000}
+.theme-toggle{width:38px;height:38px;border-radius:50%;border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .3s var(--ease);background:transparent;flex-shrink:0;margin-left:auto}
+.theme-toggle:hover{background:rgba(255,255,255,.12)}
+.theme-toggle svg{width:17px;height:17px;color:rgba(255,255,255,.85);transition:all .3s}
+.theme-toggle:hover svg{color:#fff}
+.theme-toggle .icon-moon{display:block}
+.theme-toggle .icon-sun{display:none}
+[data-theme="light"] .theme-toggle .icon-moon{display:none}
+[data-theme="light"] .theme-toggle .icon-sun{display:block}
+[data-theme="light"] .nav-logo:hover{opacity:.65}
+[data-theme="light"] .theme-toggle{background:transparent}
+[data-theme="light"] .theme-toggle:hover{background:rgba(0,0,0,.1)}
+[data-theme="light"] .theme-toggle svg{color:rgba(0,0,0,.7)}
+[data-theme="light"] .theme-toggle:hover svg{color:#000}
+.menu-toggle{display:flex;width:clamp(36px,2.6rem,42px);height:clamp(36px,2.6rem,42px);border-radius:50%;background:transparent;flex-direction:column;justify-content:center;align-items:center;gap:4px;z-index:200;flex-shrink:0;margin-right:4px;transition:all .3s}
+.menu-toggle:hover{background:rgba(255,255,255,.06)}
+.menu-toggle span{display:block;height:1.5px;background:#fff;border-radius:2px;transition:all .35s cubic-bezier(.645,.045,.355,1)}
+.menu-toggle span:first-child{width:18px}
+.menu-toggle span:last-child{width:12px}
+.menu-toggle.active span:first-child{transform:rotate(45deg) translate(2px,2px);width:16px}
+.menu-toggle.active span:last-child{transform:rotate(-45deg) translate(2px,-2px);width:16px}
+[data-theme="light"] .menu-toggle:hover{background:rgba(0,0,0,.05)}
+[data-theme="light"] .menu-toggle span{background:#000}
+.nav-links{display:none!important}
+
+section{padding:clamp(100px,12vw,160px) 0}
+.section-label{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.25em;color:var(--gray3);margin-bottom:20px;display:flex;align-items:center;gap:14px}
+.section-label::before{content:'';width:32px;height:1px;background:var(--gray4)}
+.section-title{font-family:var(--serif);font-size:clamp(2.2rem,4.5vw,3.8rem);line-height:1.08;letter-spacing:-.03em;font-weight:800;margin-bottom:20px}
+.section-title em{font-style:normal;font-weight:400;opacity:.4}
+.section-desc{font-size:1.05rem;color:var(--gray2);max-width:540px;line-height:1.85}
+.section-header{margin-bottom:clamp(56px,7vw,80px)}
+
+.btn-back{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:600;color:var(--gray2);text-transform:uppercase;letter-spacing:.1em;margin-bottom:24px;padding:0;border:none;transition:all .3s var(--ease)}
+.btn-back:hover{color:var(--white)}
+.btn-back svg{transition:transform .3s}
+.btn-back:hover svg{transform:translateX(-3px)}
+.page-header{padding-top:220px;padding-bottom:clamp(64px,8vw,100px)}
+.page-header h1{font-family:var(--serif);font-size:clamp(2.8rem,5vw,4.5rem);font-weight:800;letter-spacing:-.04em;line-height:.95;margin-bottom:16px}
+.page-header h1 em{font-weight:400;opacity:.4;font-style:normal}
+.page-header p{font-size:1.05rem;color:var(--gray2);max-width:760px;line-height:1.8;font-weight:300}
+
+/* About */
+.about-section{padding-top:0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(48px,7vw,100px);align-items:start}
+.about-text{color:var(--gray2);font-size:1rem;line-height:1.85;font-weight:300;margin-bottom:20px}
+.about-stats{display:flex;gap:clamp(28px,4vw,48px);margin-top:40px;padding-top:32px;border-top:1px solid var(--gray6)}
+.about-stat-val{font-family:var(--serif);font-size:clamp(2rem,3vw,2.8rem);font-weight:800;line-height:1;margin-bottom:6px}
+.about-stat-label{font-size:.7rem;color:var(--gray3);text-transform:uppercase;letter-spacing:.1em;font-weight:500}
+.about-photo{border-radius:20px;overflow:hidden;aspect-ratio:4/5}
+.about-photo img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.about-photo:hover img{transform:scale(1.04)}
+
+/* Expertise cards */
+.expertise-section{background:var(--bg2)}
+.about-right{display:flex;flex-direction:column;gap:20px}
+.about-card{background:var(--bg3);border:1px solid var(--gray6);border-radius:16px;padding:clamp(24px,3vw,32px);display:flex;gap:16px;align-items:flex-start;transition:all .35s var(--ease)}
+.about-card:hover{border-color:var(--gray5);transform:translateY(-3px);box-shadow:0 16px 40px rgba(0,0,0,.2)}
+.about-card-icon{width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid var(--gray6);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.1rem}
+.about-card h4{font-size:.95rem;font-weight:700;margin-bottom:4px}
+.about-card p{font-size:.82rem;color:var(--gray3);line-height:1.6;font-weight:300}
+.expertise-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+
+/* Skills bar */
+.skills-list{display:flex;flex-direction:column;gap:22px;max-width:640px}
+.skill-row{display:flex;flex-direction:column;gap:10px}
+.skill-head{display:flex;justify-content:space-between;align-items:baseline}
+.skill-name{font-size:.95rem;font-weight:700}
+.skill-pct{font-size:.78rem;color:var(--gray3);font-weight:500}
+.skill-track{height:5px;background:var(--gray6);border-radius:100px;overflow:hidden}
+.skill-fill{height:100%;width:0;background:#fff;border-radius:100px;transition:width 1.2s var(--ease)}
+.skill-row.visible .skill-fill{width:var(--w)}
+[data-theme="light"] .skill-fill{background:#111}
+
+/* Experience timeline (process-step style) */
+.process-timeline{position:relative;display:flex;flex-direction:column;gap:0}
+.process-step{display:grid;grid-template-columns:140px 1fr;gap:clamp(24px,4vw,56px);padding:clamp(32px,4vw,48px) 0;border-bottom:1px solid var(--gray6);align-items:start;transition:all .3s}
+.process-step:hover{padding-left:12px}
+.process-step:last-child{border-bottom:none}
+.step-year{font-family:var(--serif);font-size:1.4rem;font-weight:800;color:var(--gray4);line-height:1.2;transition:color .3s}
+.process-step:hover .step-year{color:var(--white)}
+.step-content h4{font-size:1.15rem;font-weight:700;margin-bottom:4px}
+.step-role{font-size:.8rem;color:var(--gray3);text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px;font-weight:600}
+.step-content p{font-size:.9rem;color:var(--gray3);line-height:1.75;max-width:540px;font-weight:300}
+
+/* Big CTA */
+.big-cta{padding:clamp(80px,12vw,140px) 0;text-align:center;position:relative;overflow:hidden;border-top:1px solid var(--gray6)}
+.big-cta::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.03) 0%,transparent 70%)}
+.big-cta h2{font-family:var(--serif);font-size:clamp(2.4rem,5vw,4.5rem);font-weight:800;letter-spacing:-.04em;line-height:1.05;margin-bottom:20px;position:relative;z-index:1}
+.big-cta h2 em{font-style:normal;font-weight:400;opacity:.4}
+.big-cta p{font-size:1.05rem;color:var(--gray2);margin-bottom:40px;max-width:480px;margin-inline:auto;position:relative;z-index:1}
+.big-cta .btn-fill{position:relative;z-index:1}
+.btn-fill{display:inline-flex;align-items:center;gap:10px;padding:16px 40px;background:#fff;color:#000;font-size:.85rem;font-weight:700;border-radius:100px;letter-spacing:.04em;text-transform:uppercase;transition:all .35s var(--ease)}
+.btn-fill:hover{background:var(--gray1);transform:translateY(-3px);box-shadow:0 12px 40px rgba(255,255,255,.1)}
+.btn-fill svg{transition:transform .3s}
+.btn-fill:hover svg{transform:translateX(4px)}
+
+footer{border-top:1px solid var(--gray6);padding:48px 0}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px}
+.footer-copy{font-size:.82rem;color:var(--gray2);font-weight:400}
+.footer-contact{display:flex;flex-wrap:wrap;gap:8px 32px;align-items:center;justify-content:center;text-align:center}
+.footer-contact a{font-size:1.05rem;color:var(--gray2);font-weight:400;transition:color .3s}
+.footer-contact a:hover{color:var(--white)}
+.footer-socials{display:flex;gap:10px}
+.social-link{width:52px;height:52px;border-radius:50%;border:1px solid var(--gray5);display:flex;align-items:center;justify-content:center;transition:all .35s var(--ease)}
+.social-link:hover{background:#fff;border-color:#fff;transform:translateY(-3px)}
+.social-link svg{width:22px;height:22px;color:var(--gray2)}
+.social-link:hover svg{color:#000}
+
+.back-to-top{position:fixed;bottom:36px;right:36px;width:48px;height:48px;border-radius:50%;background:#fff;color:#000;display:flex;align-items:center;justify-content:center;opacity:0;transform:translateY(12px);transition:all .35s var(--ease);z-index:90}
+.back-to-top.visible{opacity:1;transform:translateY(0)}
+.back-to-top:hover{transform:translateY(-4px)}
+
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-d1{transition-delay:.1s}.reveal-d2{transition-delay:.2s}.reveal-d3{transition-delay:.3s}.reveal-d4{transition-delay:.4s}
+
+@media(max-width:768px){
+  nav{padding:6px}
+  .nav-logo{font-size:.7rem}
+  .about-grid{grid-template-columns:1fr}
+  .about-photo{aspect-ratio:1/1}
+  .about-stats{flex-wrap:wrap}
+  .expertise-grid{grid-template-columns:1fr}
+  .process-step{grid-template-columns:90px 1fr}
+  .footer-inner{justify-content:center;text-align:center}
+}
+
+/* ===== Case study detail ===== */
+.csd-hero-wrap{position:relative;padding-top:clamp(120px,18vh,180px);overflow:hidden}
+.csd-hero-wrap::before{content:'';position:absolute;top:-18%;right:-8%;width:min(720px,64vw);height:min(720px,64vw);border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,#F97316 34%,transparent),transparent 62%);pointer-events:none;opacity:.6;z-index:0}
+.csd-hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.7fr 1fr;gap:clamp(32px,5vw,72px);align-items:end;margin-top:clamp(26px,4vw,40px)}
+.csd-hero-main{max-width:780px}
+.csd-eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gray3);margin-bottom:18px}
+.csd-title{font-family:var(--serif);font-size:clamp(2.6rem,7vw,5.5rem);font-weight:800;letter-spacing:-.04em;line-height:.98;margin-bottom:22px}
+.csd-sub{font-size:clamp(1.05rem,1.5vw,1.3rem);color:var(--gray2);line-height:1.6;font-weight:300;max-width:640px}
+.csd-livelink{display:inline-flex;align-items:center;gap:9px;margin-top:30px;padding:13px 28px;border:1px solid var(--gray5);border-radius:100px;font-size:.8rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--white);transition:all .35s var(--ease)}
+.csd-livelink:hover{background:var(--white);color:var(--bg);border-color:var(--white);transform:translateY(-2px)}
+.csd-livelink svg{transition:transform .3s}
+.csd-livelink:hover svg{transform:translate(3px,-3px)}
+.csd-hero-meta{display:flex;flex-direction:column;gap:20px;padding-bottom:10px;border-left:1px solid var(--gray6);padding-left:clamp(24px,2.4vw,32px)}
+.csd-meta-item{display:flex;flex-direction:column;gap:6px}
+.csd-meta-label{font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gray3)}
+.csd-meta-value{font-size:1rem;font-weight:500;color:var(--white)}
+.csd-cover{margin-top:clamp(40px,6vw,72px);width:calc(100% + (100vw - 100%)*var(--p,0));margin-left:calc((50% - 50vw)*var(--p,0));border-radius:0;overflow:hidden;border:1px solid var(--gray6);aspect-ratio:16/9;background:var(--bg2);will-change:width,margin-left}
+.csd-cover img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s var(--ease)}
+.csd-cover:hover img{transform:scale(1.03)}
+.csd-section{padding:clamp(64px,9vw,120px) 0}
+.csd-block{max-width:920px}
+.csd-lead{font-family:var(--serif);font-size:clamp(1.5rem,3vw,2.4rem);font-weight:600;letter-spacing:-.02em;line-height:1.3}
+.csd-2col{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px)}
+.csd-2col p{font-size:1.05rem;color:var(--gray2);line-height:1.8;font-weight:300;margin-top:14px}
+.csd-rich{max-width:920px}
+.csd-2col-top{align-items:start}
+.csd-2col .csd-rich{max-width:none}
+.csd-rich p{font-size:1.05rem;color:var(--gray2);line-height:1.8;font-weight:300;margin-top:16px}
+.csd-rich ol{margin:20px 0 4px;padding:0;list-style:none;counter-reset:item;display:grid;gap:14px}
+.csd-rich ol li{counter-increment:item;font-size:1rem;color:var(--gray2);line-height:1.7;font-weight:300;padding:16px 22px 16px 56px;border:1px solid var(--gray6);background:var(--bg3);position:relative}
+.csd-rich ol li::before{content:counter(item);position:absolute;left:22px;top:16px;font-family:var(--serif);font-weight:800;color:var(--gray3);font-size:1.05rem}
+.comp-wrap{margin-top:clamp(32px,4vw,48px);overflow-x:auto;border:1px solid var(--gray6)}
+.comp-table{width:100%;min-width:760px;border-collapse:collapse;font-size:.95rem}
+.comp-table th,.comp-table td{border:1px solid var(--gray6);padding:clamp(13px,1.5vw,18px);text-align:center;vertical-align:middle}
+.comp-table thead th{font-weight:700;color:var(--gray1);font-size:1rem;background:var(--bg3)}
+.comp-table tbody td:first-child,.comp-table thead th:first-child{text-align:left;color:var(--gray1);font-weight:600}
+.comp-table thead th.comp-axhub{background:linear-gradient(135deg,#FF8A3D,#FF5E62);color:#fff}
+.comp-table td.comp-axhub{background:rgba(255,122,40,.06)}
+.comp-yes{display:inline-flex;width:24px;height:24px;align-items:center;justify-content:center;color:#22C55E}
+.comp-yes svg{width:20px;height:20px}
+.axhub-personas{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,2.5vw,32px);margin-top:clamp(32px,4vw,48px)}
+.axhub-personas img{width:100%;height:auto;display:block;border:1px solid var(--gray6)}
+@media(max-width:768px){.axhub-personas{grid-template-columns:1fr}}
+.axhub-cv{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2vw,28px);margin-top:clamp(32px,4vw,48px)}
+.axhub-cv img,.axhub-cv video{width:100%;aspect-ratio:1/1;height:auto;object-fit:cover;display:block;border:1px solid var(--gray6);background:var(--bg2)}
+@media(max-width:768px){.axhub-cv{grid-template-columns:1fr}}
+.axhub-iv{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2vw,28px);align-items:start;margin-top:clamp(32px,4vw,48px)}
+.axhub-iv img,.axhub-iv video{width:100%;height:auto;display:block;border:1px solid var(--gray6);background:var(--bg2)}
+@media(max-width:768px){.axhub-iv{grid-template-columns:1fr}}
+.csd-figure{border-radius:0;overflow:hidden;border:1px solid var(--gray6);background:var(--bg2)}
+.csd-figure img{width:100%;display:block}
+.csd-steps{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(24px,3vw,40px);margin-top:clamp(40px,5vw,56px)}
+.csd-step{padding:clamp(28px,3vw,36px);border:1px solid var(--gray6);border-radius:0;background:var(--bg3)}
+.csd-step-num{font-family:var(--serif);font-size:.85rem;font-weight:800;color:var(--gray3);letter-spacing:.05em}
+.csd-step h4{font-size:1.2rem;font-weight:700;margin:14px 0 10px}
+.csd-step p{font-size:.95rem;color:var(--gray2);line-height:1.7;font-weight:300}
+.csd-gallery{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2vw,24px)}
+.csd-gallery img{width:100%;border-radius:0;border:1px solid var(--gray6);display:block;aspect-ratio:4/5;object-fit:cover}
+.csd-results{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,3vw,40px);margin-top:clamp(40px,5vw,56px)}
+.csd-stat{padding:clamp(28px,3vw,40px);border:1px solid var(--gray6);border-radius:0;background:var(--bg3);text-align:center}
+.csd-stat-val{font-family:var(--serif);font-size:clamp(2.4rem,5vw,3.6rem);font-weight:800;letter-spacing:-.03em;line-height:1}
+.csd-stat-label{margin-top:12px;font-size:.85rem;color:var(--gray2);text-transform:uppercase;letter-spacing:.08em}
+.csd-next{display:block;border-top:1px solid var(--gray6);padding:clamp(56px,9vw,110px) 0;transition:background .4s var(--ease)}
+.csd-next:hover{background:var(--bg2)}
+.csd-next-label{display:block;font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gray3);margin-bottom:18px}
+.csd-next-title{display:flex;align-items:center;gap:18px;font-family:var(--serif);font-size:clamp(1.8rem,4vw,3rem);font-weight:800;letter-spacing:-.03em;line-height:1.1}
+.csd-next-title svg{flex-shrink:0;transition:transform .35s var(--ease)}
+.csd-next:hover .csd-next-title svg{transform:translateX(8px)}
+/* More projects — auto-scroll marquee */
+.csd-more{padding:clamp(64px,9vw,120px) 0;border-top:1px solid var(--gray6);overflow:hidden}
+.csd-marquee{margin-top:clamp(36px,5vw,56px);overflow:hidden}
+.csd-marquee-track{display:flex;width:max-content;animation:csdScroll 45s linear infinite}
+.csd-marquee:hover .csd-marquee-track{animation-play-state:paused}
+.csd-proj{flex:0 0 auto;width:clamp(360px,44vw,640px);margin-right:clamp(20px,2.4vw,32px);display:flex;flex-direction:column;background:var(--bg3);border:1px solid var(--gray6);border-radius:0;overflow:hidden;transition:transform .5s var(--ease),border-color .5s var(--ease),box-shadow .5s var(--ease)}
+.csd-proj:hover{transform:translateY(-6px);border-color:var(--gray5);box-shadow:0 24px 60px rgba(0,0,0,.3)}
+.csd-proj-thumb{aspect-ratio:16/11;overflow:hidden;background:var(--bg2)}
+.csd-proj-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.csd-proj:hover .csd-proj-thumb img{transform:scale(1.04)}
+.csd-proj-name{margin:clamp(20px,2.2vw,26px) clamp(20px,2.2vw,28px) 0;font-family:var(--serif);font-size:clamp(1.05rem,1.5vw,1.35rem);font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--white)}
+.csd-proj-cat{margin:8px clamp(20px,2.2vw,28px) clamp(22px,2.4vw,28px);font-size:.9rem;color:var(--gray2);line-height:1.5}
+@keyframes csdScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.csd-marquee-track{animation:none}}
+@media(max-width:768px){
+  .csd-hero-grid{grid-template-columns:1fr;gap:28px;align-items:start}
+  .csd-hero-meta{flex-direction:row;flex-wrap:wrap;gap:22px 40px;border-left:none;padding-left:0;border-top:1px solid var(--gray6);padding-top:24px}
+  .csd-2col,.csd-steps,.csd-results,.csd-gallery{grid-template-columns:1fr}
+}
+</style>
+
+<!-- SEO JSONLD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "AxHub — Case Study",
+  "headline": "AxHub — Case Study · Ravi Patel",
+  "url": "https://ravipatel.design/casestudy-axhub.html",
+  "author": { "@type": "Person", "name": "Ravi Patel", "url": "https://ravipatel.design/" },
+  "creator": { "@type": "Person", "name": "Ravi Patel" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ravipatel.design/" },
+    { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://ravipatel.design/work.html" },
+    { "@type": "ListItem", "position": 3, "name": "AxHub", "item": "https://ravipatel.design/casestudy-axhub.html" }
+  ]
+}
+</script>
+<!-- /SEO JSONLD -->
+</head>
+<body>
+<div class="cursor" id="cursor"></div><div class="cursor-ring" id="cursorRing"></div><div class="cursor-label" id="cursorLabel"></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">RAVIPATEL</a>
+    <span class="nav-page">Case Study</span>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <svg class="icon-moon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="icon-sun" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    </button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="menu-panel" id="menuPanel"><button class="menu-panel-close" onclick="closeMenu()" aria-label="Close menu"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" viewBox="0 0 16 16"><path d="M3 3l10 10M13 3L3 13"/></svg></button>
+  <div class="menu-panel-label">Menu</div>
+  <div class="menu-panel-links">
+    <a href="index.html" class="menu-panel-link">Home</a>
+    <a href="work.html" class="menu-panel-link">Work</a>
+    <a href="services.html" class="menu-panel-link">Services</a>
+  </div>
+  <div class="menu-panel-bottom">
+    <div>
+      <div class="menu-panel-col-label">Contact</div>
+      <a href="mailto:ravi.uxuidesigner@gmail.com" class="menu-panel-detail">ravi.uxuidesigner@gmail.com</a>
+      <a href="tel:+916351380623" class="menu-panel-detail">+91-6351380623</a>
+    </div>
+    <div>
+      <div class="menu-panel-col-label">Follow</div>
+      <a href="https://www.linkedin.com/in/raviuiuxdesigner/" target="_blank" rel="noopener" class="menu-panel-detail">LinkedIn</a>
+      <a href="https://dribbble.com/Ravi_UXUI_Design" target="_blank" rel="noopener" class="menu-panel-detail">Dribbble</a>
+      <a href="https://www.behance.net/ravikumarpatel44" target="_blank" rel="noopener" class="menu-panel-detail">Behance</a>
+    </div>
+  </div>
+  <a href="contact.html" class="menu-panel-cta">
+    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    Let's Talk
+  </a>
+</div>
+
+<!-- CASE STUDY HERO -->
+<div class="csd-hero-wrap reveal">
+  <div class="container">
+    <a href="work.html" class="btn-back">
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M11 7H3M7 3L3 7l4 4"/></svg>
+      Back to Work
+    </a>
+    <div class="csd-hero-grid">
+      <div class="csd-hero-main">
+        <h1 class="csd-title">AxHub</h1>
+        <p class="csd-sub">An employee engagement &amp; networking app for Axis — “make moves, build connections.” Streamlining communication, collaboration, and engagement across the organization.</p>
+        <a href="https://www.behance.net/gallery/148334167/AxHub-Mobile-App" target="_blank" rel="noopener" class="csd-livelink">View on Behance <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M7 17 17 7M17 7H8M17 7v9"/></svg></a>
+      </div>
+      <aside class="csd-hero-meta">
+        <div class="csd-meta-item"><span class="csd-meta-label">Client</span><span class="csd-meta-value">Axis</span></div>
+        <div class="csd-meta-item"><span class="csd-meta-label">Services</span><span class="csd-meta-value">UX/UI · Mobile App</span></div>
+        <div class="csd-meta-item"><span class="csd-meta-label">Year</span><span class="csd-meta-value">2024</span></div>
+        <div class="csd-meta-item"><span class="csd-meta-label">Role</span><span class="csd-meta-value">Senior UI/UX Designer</span></div>
+      </aside>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="csd-cover reveal">
+    <img src="assets/img/axhub.jpg?v=2" alt="AxHub mobile app — home feed">
+  </div>
+</div>
+
+<!-- OVERVIEW -->
+<section class="csd-section">
+  <div class="container">
+    <div class="csd-block reveal">
+      <div class="section-label">Overview</div>
+      <p class="csd-lead">AxHub is Axis’s employee engagement and networking app — built around the idea “make moves, build connections.” It brings featured news, community updates, trending content, and a magazine into one place so people can discover, connect, and grow.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CHALLENGE & APPROACH -->
+<section class="csd-section" style="padding-top:0">
+  <div class="container">
+    <div class="csd-2col csd-2col-top reveal">
+      <div class="csd-rich">
+        <div class="section-label">Problem</div>
+        <p>In large organisations, employees often feel disconnected from their peers and lack a sense of belonging. This disconnection leads to reduced collaboration, low engagement, and declining motivation.</p>
+        <ol>
+          <li>Managers struggle to gain real-time insights into team morale, making it challenging to address issues before they impact productivity.</li>
+          <li>Important documents and downloadable resources often get buried or misplaced in generic platforms like Teams or Slack.</li>
+          <li>Employees struggle to keep up with company-wide updates due to scattered communication platforms.</li>
+          <li>Existing tools don't cater specifically to internal workflows, resulting in inefficient processes.</li>
+        </ol>
+      </div>
+      <div class="csd-rich">
+        <div class="section-label">Solution</div>
+        <p>To create a unified app that streamlines communication, resource sharing, and employee engagement, while fostering meaningful connections and boosting productivity across the organisation.</p>
+        <ol>
+          <li>Separate feeds for company-wide updates and personalised employee interactions to reduce information fatigue and improve focus.</li>
+          <li>Allow employees to view colleagues' profiles with interests, skills, and contact details, fostering connections without unnecessary distractions.</li>
+          <li>Enable employees to join groups based on their interests or professional goals to encourage collaboration across departments.</li>
+          <li>Create a simple system to store downloadable resources for easy access. Connect it to the HR portal to facilitate convenient access.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="csd-section" style="padding-top:0">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Process</div>
+      <h2 class="section-title">From insight <em>to</em> a refined experience</h2>
+    </div>
+    <div class="csd-steps">
+      <div class="csd-step reveal"><span class="csd-step-num">01</span><h4>Research &amp; Discovery</h4><p>Interviewed employees, mapped how information flowed, and pinpointed where engagement broke down.</p></div>
+      <div class="csd-step reveal reveal-d1"><span class="csd-step-num">02</span><h4>Information Architecture</h4><p>Structured the app around a home feed, community, trending, and a magazine for quick, intuitive access.</p></div>
+      <div class="csd-step reveal reveal-d2"><span class="csd-step-num">03</span><h4>UI &amp; Design System</h4><p>Created a bold, friendly visual language and a reusable component library in the Axis orange identity.</p></div>
+      <div class="csd-step reveal reveal-d3"><span class="csd-step-num">04</span><h4>Prototype &amp; Handoff</h4><p>Built interactive prototypes, validated the core flows, and delivered dev-ready specs and assets.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPETITOR ANALYSIS -->
+<section class="csd-section" style="padding-top:0">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Research</div>
+      <h2 class="section-title">Competitor <em>Analysis</em></h2>
+      <p style="margin-top:18px;max-width:880px;font-size:1.02rem;color:var(--gray2);line-height:1.8;font-weight:300">This analysis helped us identify key features and user needs within the employee engagement space. Though tailored for the Axis organization, this research allowed us to enhance AxHub's features and ensure it stands out by focusing on internal communication, resource sharing, and engagement.</p>
+    </div>
+    <div class="comp-wrap reveal">
+      <table class="comp-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th class="comp-axhub">AxHub</th>
+            <th>Jostle</th>
+            <th>Workplace by Meta</th>
+            <th>Slack</th>
+            <th>Teams</th>
+            <th>Yammer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Categorized Downloadables</td>
+            <td class="comp-axhub"><span class="comp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+            <td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td>Professional vs Casual Feeds</td>
+            <td class="comp-axhub"><span class="comp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+            <td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td>Employee Directory</td>
+            <td class="comp-axhub"><span class="comp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+            <td><span class="comp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+            <td><span class="comp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+            <td><span class="comp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+            <td><span class="comp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+            <td><span class="comp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+          </tr>
+          <tr>
+            <td>Events &amp; Polls</td>
+            <td class="comp-axhub"><span class="comp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+            <td><span class="comp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+            <td><span class="comp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+            <td><span class="comp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+            <td><span class="comp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+            <td><span class="comp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+          </tr>
+          <tr>
+            <td>Targeted Notifications</td>
+            <td class="comp-axhub"><span class="comp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+            <td><span class="comp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+            <td><span class="comp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+            <td><span class="comp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+            <td><span class="comp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+            <td><span class="comp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+          </tr>
+          <tr>
+            <td>News &amp; Updates Feed</td>
+            <td class="comp-axhub"><span class="comp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+            <td><span class="comp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+            <td><span class="comp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+            <td></td><td></td>
+            <td><span class="comp-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- USER PERSONAS -->
+<section class="csd-section" style="padding-top:0">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Research</div>
+      <h2 class="section-title">User Personas for <em>Shaping the Experience</em></h2>
+      <p style="margin-top:18px;max-width:880px;font-size:1.02rem;color:var(--gray2);line-height:1.8;font-weight:300">These personas are designed to help us understand the goals, challenges, and motivations of real employees, ensuring that the app meets their needs.</p>
+    </div>
+    <div class="axhub-personas reveal">
+      <img src="assets/img/axhub-persona-1.png?v=1" alt="AxHub persona — Raj Singhal, Senior Project Coordinator" loading="lazy">
+      <img src="assets/img/axhub-persona-2.png?v=1" alt="AxHub persona — Priya Sharma, HR Manager" loading="lazy">
+    </div>
+    <figure class="csd-figure reveal" style="margin-top:clamp(20px,2.5vw,32px)">
+      <img src="assets/img/axhub-persona-showcase.png?v=2" alt="AxHub — home feed app experience with feature highlights" loading="lazy">
+    </figure>
+  </div>
+</section>
+
+<!-- CREATE, SHARE & STAY UPDATED -->
+<section class="csd-section" style="padding-top:0">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Feed</div>
+      <h2 class="section-title">Create, Share and <em>Stay Updated!</em></h2>
+      <p style="margin-top:18px;max-width:880px;font-size:1.02rem;color:var(--gray2);line-height:1.8;font-weight:300">A dedicated space to express yourself! Switch seamlessly between your personal feed and the company feed. Stay engaged with peers while staying informed about organizational updates.</p>
+    </div>
+    <div class="axhub-cv reveal">
+      <img src="assets/img/axhub-feed-photo.jpg?v=1" alt="Employee using the AxHub app" loading="lazy">
+      <video src="assets/video/axhub-feed.mov" autoplay loop muted playsinline></video>
+    </div>
+  </div>
+</section>
+
+<!-- USERFLOW -->
+<section class="csd-section" style="padding-top:0">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Structure</div>
+      <h2 class="section-title">User<em>flow</em></h2>
+      <p style="margin-top:18px;max-width:880px;font-size:1.02rem;color:var(--gray2);line-height:1.8;font-weight:300">Our user flow simplifies how employees navigate the company's digital space. From feeds and posts to events and resources, it ensures seamless engagement and meaningful contributions to their workplace community.</p>
+    </div>
+    <figure class="csd-figure reveal" style="margin-top:clamp(32px,4vw,48px)">
+      <img src="assets/img/axhub-userflow.png?v=2" alt="AxHub — employee user flow diagram" loading="lazy">
+    </figure>
+    <figure class="csd-figure reveal" style="margin-top:clamp(16px,2.4vw,28px)">
+      <video src="assets/video/axhub-clip-2.mov" autoplay loop muted playsinline style="width:100%;display:block"></video>
+    </figure>
+  </div>
+</section>
+
+<!-- DESIGN SYSTEM -->
+<section class="csd-section" style="padding-top:0">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Visual System</div>
+      <h2 class="section-title">Design System for <em>Optimal User Interaction</em></h2>
+      <p style="margin-top:18px;max-width:880px;font-size:1.02rem;color:var(--gray2);line-height:1.8;font-weight:300">This system includes a carefully chosen combination of typography, color schemes, grids, and UI components that harmonize across all screens, making the app visually appealing and functional.</p>
+    </div>
+    <figure class="csd-figure reveal" style="margin-top:clamp(32px,4vw,48px)">
+      <img src="assets/img/axhub-designsystem.jpg?v=1" alt="AxHub — colour palette and typography design system" loading="lazy">
+    </figure>
+    <figure class="reveal" style="margin-top:clamp(16px,2.4vw,28px)">
+      <img src="assets/img/axhub-components.jpg?v=1" alt="AxHub — UI components and grid layout" loading="lazy" style="width:100%;display:block">
+    </figure>
+  </div>
+</section>
+
+<!-- ATTENDANCE & LEAVE -->
+<section class="csd-section" style="padding-top:0">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Module</div>
+      <h2 class="section-title">Attendance, Leave &amp; <em>Quick Access Overview</em></h2>
+      <p style="margin-top:18px;max-width:880px;font-size:1.02rem;color:var(--gray2);line-height:1.8;font-weight:300">This module gives employees real-time access to workday essentials, from attendance tracking to leave summaries. With geo-fencing check-in and visualized stats, it simplifies processes while promoting transparency.</p>
+    </div>
+    <div class="axhub-cv reveal">
+      <img src="assets/img/axhub-attendance-1.jpg?v=1" alt="Team in the office" loading="lazy">
+      <img src="assets/img/axhub-attendance-2.jpg?v=1" alt="AxHub — attendance check-in and summary" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- UI SCREENS -->
+<section class="csd-section" style="padding-top:0">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Showcase</div>
+      <h2 class="section-title">Designed 80+ UI Screens <em>for a Seamless Experience</em></h2>
+      <p style="margin-top:18px;max-width:880px;font-size:1.02rem;color:var(--gray2);line-height:1.8;font-weight:300">The UI screens maintain a professional design, adhering to company branding with orange accents that symbolize energy and collaboration, ensuring a cohesive and functional experience.</p>
+    </div>
+    <figure class="reveal" style="margin-top:clamp(32px,4vw,48px)">
+      <img src="assets/img/axhub-ui-screens.png?v=1" alt="AxHub — 80+ UI screens overview" loading="lazy" style="width:100%;display:block">
+    </figure>
+  </div>
+</section>
+
+<!-- CONNECTIONS -->
+<section class="csd-section" style="padding-top:0">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Community</div>
+      <h2 class="section-title">Discover connections via <em>shared interests</em></h2>
+      <p style="margin-top:18px;max-width:880px;font-size:1.02rem;color:var(--gray2);line-height:1.8;font-weight:300">Dive into shared interests by joining or creating groups. Spark ideas, exchange updates, and build a thriving network within your organization. Connect with like-minded individuals, share your ideas, and encourage innovation in vibrant group settings and with individuals.</p>
+    </div>
+    <div class="axhub-iv reveal">
+      <img src="assets/img/axhub-connections.png?v=2" alt="AxHub — join community groups by shared interests" loading="lazy">
+      <video src="assets/video/axhub-clip-3.mov" autoplay loop muted playsinline></video>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL IMAGE -->
+<section class="csd-section" style="padding-top:0">
+  <div class="container">
+    <figure class="reveal">
+      <img src="assets/img/axhub-billboard.jpg?v=1" alt="AxHub — Collaborate, Innovate & Build Stronger Teams campaign billboard" loading="lazy" style="width:100%;display:block">
+    </figure>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="csd-section" style="padding-top:0">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Impact</div>
+      <h2 class="section-title">Results that <em>moved</em> the business</h2>
+    </div>
+    <div class="csd-results reveal">
+      <div class="csd-stat"><div class="csd-stat-val">+72%</div><div class="csd-stat-label">Daily active users</div></div>
+      <div class="csd-stat"><div class="csd-stat-val">4.8&#9733;</div><div class="csd-stat-label">App rating</div></div>
+      <div class="csd-stat"><div class="csd-stat-val">2.1&times;</div><div class="csd-stat-label">Content engagement</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MORE PROJECTS (auto-scroll marquee) -->
+<section class="csd-more">
+  <div class="container">
+    <div class="section-label">More Projects</div>
+    <h2 class="section-title">Explore <em>more</em> work</h2>
+  </div>
+  <div class="csd-marquee">
+    <div class="csd-marquee-track">
+      <a href="casestudy-homexperia.html" class="csd-proj"><div class="csd-proj-thumb"><img src="assets/img/homexperia-1.png?v=3" alt="Homexperia" loading="lazy"></div><div class="csd-proj-name">Homexperia</div><div class="csd-proj-cat">An AI-powered home discovery platform — helping people find and explore properties through a smarter, more personal search</div></a>
+      <a href="casestudy-tectonagrandis.html" class="csd-proj"><div class="csd-proj-thumb"><img src="assets/img/tectonagrandis.jpg?v=3" alt="Tectona Grandis" loading="lazy"></div><div class="csd-proj-name">Tectona Grandis</div><div class="csd-proj-cat">Redesigning a premium handcrafted teak furniture brand to elevate usability, premium feel, and customer enquiries</div></a>
+      <a href="casestudy-uhc.html" class="csd-proj"><div class="csd-proj-thumb"><img src="assets/img/uhc-dashboard.jpg?v=2" alt="UHC" loading="lazy"></div><div class="csd-proj-name">UHC</div><div class="csd-proj-cat">Redesigned the UHC admin portal to manage appointments and multi-location scheduling for student services</div></a>
+      <a href="casestudy-indian-railways.html" class="csd-proj"><div class="csd-proj-thumb"><img src="assets/img/indian-railways.jpg?v=2" alt="Indian Railways" loading="lazy"></div><div class="csd-proj-name">Indian Railways</div><div class="csd-proj-cat">Real-time train tracking, live data monitoring, and predictive insights to enhance operational efficiency</div></a>
+      <a href="casestudy-unseenarchitects.html" class="csd-proj"><div class="csd-proj-thumb"><img src="assets/img/unseen-architects.jpg?v=1" alt="Unseen Architects" loading="lazy"></div><div class="csd-proj-name">Unseen Architects</div><div class="csd-proj-cat">A minimal, image-led website for an architecture studio — showcasing the work and driving client enquiries</div></a>
+      <a href="casestudy-battery-management.html" class="csd-proj"><div class="csd-proj-thumb"><img src="assets/img/battery-management.jpg?v=1" alt="Battery Management" loading="lazy"></div><div class="csd-proj-name">Battery Management</div><div class="csd-proj-cat">A real-time admin panel for monitoring battery health and performance across energy storage systems at scale</div></a>
+      <a href="casestudy-beyond-food-mart.html" class="csd-proj"><div class="csd-proj-thumb"><img src="assets/img/beyond-food-mart.png?v=1" alt="Beyond Food Mart" loading="lazy"></div><div class="csd-proj-name">Beyond Food Mart</div><div class="csd-proj-cat">An online grocery &amp; food retail experience — making everyday shopping fast, friendly, and effortless</div></a>
+      <a href="casestudy-homexperia.html" class="csd-proj" aria-hidden="true" tabindex="-1"><div class="csd-proj-thumb"><img src="assets/img/homexperia-1.png?v=3" alt="" loading="lazy"></div><div class="csd-proj-name">Homexperia</div><div class="csd-proj-cat">An AI-powered home discovery platform — helping people find and explore properties through a smarter, more personal search</div></a>
+      <a href="casestudy-tectonagrandis.html" class="csd-proj" aria-hidden="true" tabindex="-1"><div class="csd-proj-thumb"><img src="assets/img/tectonagrandis.jpg?v=3" alt="" loading="lazy"></div><div class="csd-proj-name">Tectona Grandis</div><div class="csd-proj-cat">Redesigning a premium handcrafted teak furniture brand to elevate usability, premium feel, and customer enquiries</div></a>
+      <a href="casestudy-uhc.html" class="csd-proj" aria-hidden="true" tabindex="-1"><div class="csd-proj-thumb"><img src="assets/img/uhc-dashboard.jpg?v=2" alt="" loading="lazy"></div><div class="csd-proj-name">UHC</div><div class="csd-proj-cat">Redesigned the UHC admin portal to manage appointments and multi-location scheduling for student services</div></a>
+      <a href="casestudy-indian-railways.html" class="csd-proj" aria-hidden="true" tabindex="-1"><div class="csd-proj-thumb"><img src="assets/img/indian-railways.jpg?v=2" alt="" loading="lazy"></div><div class="csd-proj-name">Indian Railways</div><div class="csd-proj-cat">Real-time train tracking, live data monitoring, and predictive insights to enhance operational efficiency</div></a>
+      <a href="casestudy-unseenarchitects.html" class="csd-proj" aria-hidden="true" tabindex="-1"><div class="csd-proj-thumb"><img src="assets/img/unseen-architects.jpg?v=1" alt="" loading="lazy"></div><div class="csd-proj-name">Unseen Architects</div><div class="csd-proj-cat">A minimal, image-led website for an architecture studio — showcasing the work and driving client enquiries</div></a>
+      <a href="casestudy-battery-management.html" class="csd-proj" aria-hidden="true" tabindex="-1"><div class="csd-proj-thumb"><img src="assets/img/battery-management.jpg?v=1" alt="" loading="lazy"></div><div class="csd-proj-name">Battery Management</div><div class="csd-proj-cat">A real-time admin panel for monitoring battery health and performance across energy storage systems at scale</div></a>
+      <a href="casestudy-beyond-food-mart.html" class="csd-proj" aria-hidden="true" tabindex="-1"><div class="csd-proj-thumb"><img src="assets/img/beyond-food-mart.png?v=1" alt="" loading="lazy"></div><div class="csd-proj-name">Beyond Food Mart</div><div class="csd-proj-cat">An online grocery &amp; food retail experience — making everyday shopping fast, friendly, and effortless</div></a>
+    </div>
+  </div>
+</section>
+
+<div class="big-cta">
+  <div class="container">
+    <h2>Like how I <em>think?</em><br>Let's build something.</h2>
+    <p>Looking to build a product that stands out? I create intuitive web and mobile experiences that engage users, strengthen brands, and drive results.</p>
+    <a href="contact.html" class="btn-fill">Start a Conversation <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div><span class="footer-copy">&copy; 2024 Ravi Patel. Designed with intention.</span></div>
+      <div class="footer-contact"><a href="mailto:ravi.uxuidesigner@gmail.com">Email: ravi.uxuidesigner@gmail.com</a><a href="tel:+916351380623">Contact: +91-6351380623</a></div><div class="footer-socials">
+        <a href="https://dribbble.com/Ravi_UXUI_Design" target="_blank" rel="noopener" class="social-link" aria-label="Dribbble"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm6.605 4.61a8.502 8.502 0 0 1 1.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.4 25.4 0 0 0-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0 1 12 3.475zm-3.633.803a53.9 53.9 0 0 1 3.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 0 1 4.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.245.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 0 1-2.19-5.705zM12 20.547a8.482 8.482 0 0 1-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.3 35.3 0 0 1 1.823 6.475 8.4 8.4 0 0 1-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 0 1-3.655 5.715z"/></svg></a>
+        <a href="https://www.linkedin.com/in/raviuiuxdesigner/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+        <a href="https://www.behance.net/ravikumarpatel44" target="_blank" rel="noopener" class="social-link" aria-label="Behance"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.938 4.503c.702 0 1.34.06 1.92.188.577.13 1.07.33 1.485.61.41.28.733.65.96 1.12.225.47.34 1.05.34 1.73 0 .74-.17 1.36-.507 1.86-.338.5-.837.9-1.502 1.22.906.26 1.576.72 2.022 1.37.448.66.665 1.45.665 2.36 0 .75-.13 1.39-.41 1.93-.28.55-.67 1-1.16 1.35-.48.35-1.05.6-1.67.77-.63.16-1.27.25-1.95.25H0V4.51h6.938v-.007zM6.545 10.16c.6 0 1.1-.15 1.47-.45.37-.3.55-.74.55-1.32 0-.34-.06-.62-.18-.85-.12-.23-.3-.42-.52-.55-.21-.14-.47-.23-.75-.28-.28-.05-.58-.08-.9-.08H3.47v3.53h3.075zm.18 5.59c.34 0 .66-.04.96-.12.3-.08.56-.2.79-.36.22-.16.4-.37.53-.63.12-.26.18-.58.18-.96 0-.75-.22-1.3-.66-1.64-.44-.34-1.01-.51-1.74-.51H3.47v4.22h3.255zM15.4 4.01h5.96v1.577H15.4V4.01zm6.055 4.48c.37.54.63 1.13.79 1.78.14.57.22 1.33.24 2.26h-6.77c.04.87.31 1.55.81 2.04.5.49 1.14.73 1.91.73.57 0 1.07-.15 1.47-.44.41-.29.68-.63.82-1.01h2.67c-.42 1.29-1.1 2.23-2.04 2.83-.94.6-2.07.9-3.4.9-.92 0-1.76-.15-2.52-.47-.76-.31-1.42-.75-1.97-1.32-.55-.57-.98-1.25-1.29-2.05-.3-.8-.46-1.68-.46-2.64 0-.93.15-1.79.45-2.59.3-.8.72-1.49 1.27-2.08.55-.59 1.2-1.05 1.96-1.38.76-.33 1.59-.5 2.5-.5.99 0 1.87.2 2.63.59.76.39 1.39.92 1.88 1.59zm-2.26 2.42c-.05-.73-.3-1.33-.79-1.77-.49-.44-1.1-.66-1.82-.66-.44 0-.82.08-1.15.23-.33.15-.6.35-.82.59-.22.24-.38.52-.49.84-.11.31-.18.62-.19.97h5.26z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top" onclick="window.scrollTo({top:0})"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 14V4M4 8l5-5 5 5"/></svg></button>
+
+<script>
+const themeToggle=document.getElementById('themeToggle');
+try{const s=localStorage.getItem('theme');if(s==='light')document.documentElement.setAttribute('data-theme','light')}catch(e){}
+themeToggle.addEventListener('click',()=>{const c=document.documentElement.getAttribute('data-theme');if(c==='light'){document.documentElement.removeAttribute('data-theme');try{localStorage.setItem('theme','dark')}catch(e){}}else{document.documentElement.setAttribute('data-theme','light');try{localStorage.setItem('theme','light')}catch(e){}}});
+const nav=document.getElementById('navbar'),btt=document.getElementById('backToTop');
+const mt=document.getElementById('menuToggle'),mp=document.getElementById('menuPanel'),mo=document.getElementById('menuOverlay');
+function toggleMenu(){const isOpen=mp.classList.contains('open');mp.classList.toggle('open');mo.classList.toggle('open');mt.classList.toggle('active');nav.classList.toggle('is-menu');document.body.style.overflow=isOpen?'':'hidden'}
+mt.addEventListener('click',toggleMenu);
+mo.addEventListener('click',toggleMenu);
+function closeMenu(){mp.classList.remove('open');mo.classList.remove('open');mt.classList.remove('active');nav.classList.remove('is-menu');document.body.style.overflow=''}
+document.querySelectorAll('.menu-panel-link,.menu-panel-cta').forEach(a=>{a.addEventListener('click',closeMenu)})
+window.addEventListener('scroll',()=>{if(btt)btt.classList.toggle('visible',scrollY>600)});
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')})},{threshold:.06});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+const sobs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');sobs.unobserve(x.target)}})},{threshold:.4});
+document.querySelectorAll('.skill-row').forEach(el=>sobs.observe(el));
+
+// Custom cursor (Awwwards style)
+const cur=document.getElementById('cursor'),ring=document.getElementById('cursorRing'),clbl=document.getElementById('cursorLabel');
+let mx=0,my=0,rx=0,ry=0,lx=0,ly=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.transform='translate('+mx+'px,'+my+'px) translate(-50%,-50%)'});
+(function loop(){
+  rx+=(mx-rx)*.1;ry+=(my-ry)*.1;
+  lx+=(mx-lx)*.08;ly+=(my-ly)*.08;
+  ring.style.transform='translate('+rx+'px,'+ry+'px) translate(-50%,-50%)';
+  clbl.style.transform='translate('+(lx+20)+'px,'+(ly-10)+'px)';
+  requestAnimationFrame(loop);
+})();
+document.querySelectorAll('a,button,.about-card,.nav-cta-link,.btn-fill,.btn-ghost,.theme-toggle,.social-link').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{cur.classList.add('hover');ring.classList.add('hover')});
+  el.addEventListener('mouseleave',()=>{cur.classList.remove('hover');ring.classList.remove('hover');ring.classList.remove('hover-link');clbl.classList.remove('visible');clbl.textContent=''});
+});
+document.addEventListener('mousedown',()=>{cur.classList.add('click');ring.classList.add('click')});
+document.addEventListener('mouseup',()=>{cur.classList.remove('click');ring.classList.remove('click')});
+
+/* Cover image expands to full-bleed on scroll */
+(function(){
+  var cover=document.querySelector('.csd-cover'); if(!cover) return;
+  var ticking=false;
+  function update(){
+    var r=cover.getBoundingClientRect(), vh=window.innerHeight;
+    var p=(vh*0.92 - r.top)/(vh*0.92 - vh*0.30);
+    p=Math.min(1,Math.max(0,p));
+    cover.style.setProperty('--p',p.toFixed(3));
+    ticking=false;
+  }
+  function onScroll(){ if(!ticking){ ticking=true; requestAnimationFrame(update); } }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  window.addEventListener('resize',onScroll);
+  update();
+})();
+</script>
+<script src="assets/contact-modal.js" defer></script>
+<script>(function(){var b=document.getElementById("scrollProgress");if(!b)return;function u(){var h=document.documentElement.scrollHeight-document.documentElement.clientHeight;b.style.width=(h>0?(window.scrollY/h)*100:0)+"%";}window.addEventListener("scroll",u,{passive:true});window.addEventListener("resize",u);u();})();</script>
+</body>
+</html>
